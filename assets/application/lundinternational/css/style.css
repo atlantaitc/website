@@ -1,0 +1,2946 @@
+/* FONTS */
+@font-face{font-weight:700;font-style:normal;font-family:'Eurostile';src:url('/assets/application/lundinternational/fonts/eurostileltstd-demi-webfont.eot');src:url('/assets/application/lundinternational/fonts/eurostileltstd-demi-webfont.eot?#iefix') format('embedded-opentype'),url('/assets/application/lundinternational/fonts/eurostileltstd-demi-webfont.woff') format('woff'),url('/assets/application/lundinternational/fonts/eurostileltstd-demi-webfont.ttf') format('truetype'),url('/assets/application/lundinternational/fonts/eurostileltstd-demi-webfont.svg#Eurostile') format('svg');}
+@font-face{font-weight:700;font-style:italic;font-family:'Eurostile';src:url('/assets/application/lundinternational/fonts/eurostileltstd-demioblique-webfont.eot');src:url('/assets/application/lundinternational/fonts/eurostileltstd-demioblique-webfont.eot?#iefix') format('embedded-opentype'),url('/assets/application/lundinternational/fonts/eurostileltstd-demioblique-webfont.woff') format('woff'),url('/assets/application/lundinternational/fonts/eurostileltstd-demioblique-webfont.ttf') format('truetype'),url('/assets/application/lundinternational/fonts/eurostileltstd-demioblique-webfont.svg#Eurostile') format('svg');}
+@font-face{font-weight:normal;font-style:normal;font-family:'Eurostile';src:url('/assets/application/lundinternational/fonts/eurostileltstd-webfont.eot');src:url('/assets/application/lundinternational/fonts/eurostileltstd-webfont.eot?#iefix') format('embedded-opentype'),url('/assets/application/lundinternational/fonts/eurostileltstd-webfont.woff') format('woff'),url('/assets/application/lundinternational/fonts/eurostileltstd-webfont.ttf') format('truetype'),url('/assets/application/lundinternational/fonts/eurostileltstd-webfont.svg#Eurostile') format('svg');}
+
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline;font:inherit;font-size:100%;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;height:100%;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-spacing:0;border-collapse:collapse;}
+
+/* MAIN */
+sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+html,body{min-height:100%;height:100%;}
+.coll,.colr,.col1,.col2,.col3,.coll-home,.colr-home,.header-inner,.content-inner,.footer-inner{-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;}
+body{background:#000 url(/assets/application/lundinternational/images/bg-body.png) top center;color:#888;font-size:14px;font-family:Arial,Verdana,Helvetica,sans-serif;line-height:20px;}
+h1,h2,h3,h4,h5,h6{margin-bottom:5px;width:100%;font-weight:700; font-family:"Eurostile","Helvetica Neue",Helvetica,Arial,sans-serif;}
+h1{clear:both;font-size:18px;line-height:22px; font-weight:normal; margin-bottom:10px;}
+h3{color: #999999; font-family: "Eurostile",Helvetica,sans-serif !important; font-size: 28px !important; line-height: 36px; font-weight:normal;}
+h4.upper{text-transform:uppercase; padding:0; padding-left:0 !important; margin-left:0 !important; margin:0;}
+h4.liveChat{font-family:'Eurostile', sans-serif; padding-left:0 !important; margin:0; font-size:12px; font-weight:normal;}
+h5{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#adadad;color:#fff;text-align:center;font-weight:700;font-size:12px;font-family:Arial,Helvetica,Verdana,san-serif;line-height:25px;}
+blockquote{margin-bottom:10px;margin-left:35px;font-size:18px;}
+blockquote:before{margin-left:-35px;content:'\201C';}
+blockquote:after{margin-left:10px;content:'\201D';}
+blockquote:after,blockquote:before{ position: absolute; margin-top: 14px;font-weight:700;font-size: 55px;}
+.clear{clear:both;width:100%;height:0;}
+header,footer,section,.topnav,.wrapper{position:relative;float:left;width:100%;}
+header{background:#050505 url(/assets/application/lundinternational/images/bg-logo.png) 50% top no-repeat;}
+.header-inner,.content-inner,.footer-inner,.topnav ul{position:relative;margin:0 auto;width:1000px;}
+.header-inner,.content-inner,.footer-inner,.wrapper{overflow:hidden;}
+.header-right{float:right;margin:25px 9px 0 0;}
+.topnav,footer{z-index:25;background:#333 url(/assets/application/lundinternational/images/bg-topnav.png) top center repeat-x;}
+.logo{float:left;overflow:hidden;margin:9px 0 14px 24px;width:180px;height:47px;}
+.logo img,.image-header{width:100%;height:auto;}
+.image-header{position:relative;z-index:1;}
+.header-right .search{float:left;}
+.search input[type=text]{padding:3px 3px 3px 20px;min-width:130px;outline:0;border:0;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;background:#fff url(/assets/application/lundinternational/images/bg-search.png) 7px 50% no-repeat;-webkit-box-shadow:inset 1px 1px 3px 1px rgba(0,0,0,.5);-moz-box-shadow:inset 1px 1px 3px 1px rgba(0,0,0,.5);box-shadow:inset 1px 1px 3px 1px rgba(0,0,0,.5); height:16px; width:170px !important; }
+input[type=submit],.btn-red{display:inline-block;padding:0 10px;line-height:24px!important;border:0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:url(/assets/application/lundinternational/images/btn-submit.png) top center repeat-x;color:#fff !important;text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:700;font-size:11px;font-family:"Eurostile","Helvetica Neue",Helvetica,Arial,sans-serif;line-height:24px;cursor:pointer;line-line-line-line-line-; height:24px; }
+input[type=submit]:hover,.btn-red:hover{background-position:bottom center;color:#fff;}
+label{display:block;margin-top:10px;font-weight:700;font-size:12px;}
+.social{display:inline-block;}
+hr{clear:both;margin:20px 0;border:1px solid #aeaeae;border-top:1px solid #aeaeae;border-right:0;border-bottom:0;border-left:0;}
+header .social{float:left;}
+section .social{margin-bottom:10px;}
+.social li{float:left;margin-bottom:0 !important;margin-left:5px !important;}
+section .social li:first-child{margin-left:0 !important;}
+.social li a{display:block;float:left;overflow:hidden;width:23px;height:23px;background-image:url(/assets/application/lundinternational/images/social-icons.png);background-position:0 0;background-repeat:no-repeat;text-indent:-9999px;}
+.social li .fb{background-position:0 0;}
+.social li .tw{background-position:-23px 0;}
+.social li .yt{background-position:-46px 0;}
+.social li .pi{background-position:-69px 0;}
+.sfmenu{text-align:center;}
+.sfmenu li{position:relative;display:inline-block;}
+.sfmenu ul{position:absolute;top:100%;left:0;display:none;padding:10px;max-width:439px;width:400px !important; margin-left:-100px;background:transparent url(/assets/application/lundinternational/images/bg-topnav-sub.png);text-align:left;min-height:131px;}
+.sfmenu li:hover>ul,.sfmenu li.sfHover>ul{display:block;}
+.sfmenu li a{position:relative;display:block;padding:0 15px;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:1px;font-weight:700;font-size:12px;font-family:"Eurostile","Helvetica Neue",Helvetica,Arial,sans-serif;line-height:42px;zoom:1;}
+.sfmenu li li a{color:#ccc;text-transform:none;font-weight:normal;font-family:Arial, Helvetica, sans-serif;line-height:30px; font-size:12px;}
+.sfmenu li li a:hover{color:#fff;}
+.sfmenu li li.active a,.list-links li.active a{color:#c33;}
+.sfmenu li li.active a:before,.list-links li.active a:before{float:left;margin-left:-7px;color:#960;content:"\25B6";font-size:5px;}
+.sfmenu li li:hover,.sfmenu li li.sfHover{background:0;}
+.sfmenu li li{float:left;margin-left:0;width:50%;}
+.sfmenu li li:nth-child(odd){clear:left;}
+.sfmenu ul ul{top:0;left:100%;}
+.sfmenu .navcols{width:auto;}
+.sfmenu ul ol{display:inline-block;min-width:200px;vertical-align:top;}
+.sfmenu ul ol h2 a{font-family:'Eurostile', sans-serif !important; font-weight:600 !important;}
+.sfmenu ul ol li{margin-bottom:10px;width:100%;white-space:normal;}
+.sfmenu ul ol li a {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#ccc; line-height:22px;}
+.sfmenu ul ol li a:hover {color:#fff;}
+/*.sfmenu ul{min-width:12em;*width:12em;}*/
+.sfmenu li{margin-left:2px;white-space:nowrap;-webkit-transition:background .2s;-moz-transition:background .2s;-o-transition:background .2s;transition:background .2s;*white-space:normal;}
+.sfmenu li:first-child{margin-left:0;}
+.sfmenu .active a{color:#999;}
+.sfmenu li:hover,.sfmenu li.sfHover{background:url(/assets/application/lundinternational/images/bg-topnav-active.png) top center repeat-x;-webkit-transition:none;transition:none;}
+.topnav .select-menu{display:none;}
+section{background:url(/assets/application/lundinternational/images/bg-gradient.png) top center no-repeat;}
+section a{color:#888;text-decoration:none;}
+section a:hover,section .red{color:#C33;}
+section p{margin-bottom:24px; margin-top:0px; margin-left:0px; line-height:21px;}
+section select{margin-bottom:10px;width:100%;}
+section .search{margin:0 0 20px 0;}
+section .colr>ul{list-style:disc; }
+section .colr>ul li{margin-bottom:2px;margin-left:35px;}
+.home .content-inner{padding-top:0;}
+.content-inner{padding:20px 0 0 0;background:#fff;}
+.brands{float:left;padding-top:20px;width:100%;background:#fff;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZWJlYmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-moz-linear-gradient(top,#fff 0,#bebebe 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#bebebe));background:-webkit-linear-gradient(top,#fff 0,#bebebe 100%);background:-o-linear-gradient(top,#fff 0,#bebebe 100%);background:-ms-linear-gradient(top,#fff 0,#bebebe 100%);background:linear-gradient(to bottom,#fff 0,#bebebe 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#bebebe',GradientType=0);}
+.brands ul{float:left;}
+.brands li{display:table-cell;float:left;text-align:center;height:60px; width:230px;}
+.brands li img{vertical-align:middle;}
+.brands .brandAVS { width: 177px; }
+.brands .brandLUND { width: 215px; }
+.brands .brandBelmor { width: 260px; }
+.brands .brandAMP { width: 137px; }
+.brands .brandRoll { width: 200px; }
+.youtube{display:block;overflow:hidden;margin-top:10px;}
+.youtube img{margin:-10% 0 -13% 0;width:100%;height:auto;}
+#tab4 .youtube img{margin: 0;width:294px;height:200px;}
+.btn-download{height:30px; border:none; display:block;background: url(/assets/application/lundinternational/images/btn-download.png) no-repeat; width:125px;margin:10px 0 0 0; }
+.btn-download span {display:none;}
+.list-vehicles .youtube { margin-top: 0; }
+.coll-home {position:relative;z-index:99999; padding-top:10px;}
+.coll,.colr,.coll-home,.colr-home{float:left;margin-left:10px;}
+.coll,.colr,.colr-home,.col1,.col2,.col3{position:relative;z-index:3; padding-top:10px;}
+.colr-home .module-a {padding:10px 10px 20px 10px;margin:10px 8px 0 10px;}
+.colr-home .module-a h1 {font-weight:600; font-size:18px; color:#888;}
+.colr-home .module-a p {font-family:'Eurostile', sans-serif; font-size:12px; line-height:14px; color:#888; margin-bottom:12px;}
+.colr-home .module-c {margin:10px 8px 10px 10px;}
+.colr-home .module-c .module-icon {padding:17px 10px 17px 80px;}
+.coll-home{width:715px; margin-top:30px;}
+.coll-home p {font-family:'Eurostile', sans-serif; padding-left:5px;}
+.colr-home{width:255px; margin-top:20px;}
+.colr h1 {margin-top:10px;}
+.coll-home .module-b p {padding-left:10px !important; margin-right:5px !important; font-size:12px; line-height:17px; font-family:'Eurostile', sans-serif;}
+.coll-home .module-b .module-b-img {padding-right:15px; margin-right:0px;}
+.coll-home .visible {overflow:visible;margin-left:5px;}
+.coll{width:245px;}
+.coll h3 {font-size:18px !important; font-weight:700; color:#888;line-height:22px;}
+.coll h5 {margin-bottom:5px;width:100%;font-weight:700; font-family:"Eurostile","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.coll p {margin-top:5px; margin-bottom:15px;}
+.coll article{padding-left:15px;}
+.coll article p {margin-top:20px;margin-bottom:35px;}
+.coll .hide-on-mobile h1 {font-weight:bold;}
+.home .colr{margin-left:10px;width:725px;}
+.colr{margin-left:25px;width:700px;}
+.colr-products{border-top:1px solid #ECECEC; margin-left:25px !important;width:700px; float:left; padding-top:10px;margin-top:11px;}
+.col1{padding:15px;}
+.col2>li,.col3>li{float:left;margin-left:2% !important;width:49%;}
+.col3>li{width:32%;}
+.col2>li:first-child,.col3>li:first-child{margin-bottom:0 !important;margin-left:0 !important;}
+.col2>li>img,.col3>li>img{margin-bottom:10px;width:100%;height:auto;}
+.col2 li>ul li,.col3 li>ul li{margin-bottom:5px;list-style:disc;font-family:Arial,Helvetica,sans-serif;line-height:16px;}
+.coll h2 {color: #888888; font-family: "eurostile_lt_stdbold",Helvetica,sans-serif; font-size: 18px; line-height: 20px; margin: 0 0 10px;}
+.col-full {width:90%; margin:0 auto;}
+.coll-buy {float:left;width:45%; padding-left:40px;}
+.table{display:table; margin:0 auto; width:100%;}
+ul#auto-logos {list-style:none; min-width:400px;padding-top:21px; padding-bottom:20px; text-align:center;}
+ul#auto-logos li { display:inline; padding:25px; text-align:center;}
+.colr-buy{float:right;width:45%; padding-right:40px;}
+ul#retailers {list-style:none; width:31%; text-align:left; float:left; padding-right:10px;}
+ul#retailers li {display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-center{list-style:none; width:31%; text-align:left; float:left; padding-right:10px;}
+ul#retailers-center li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-right{list-style:none; width:31%; text-align:left; float:left;}
+ul#retailers-right li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+#retailers{width:215px; /*height:500px;*/overflow:auto;margin:0 0 0 0;float:left;/*border:1px solid #888888;*/}
+#retailers .retailer p{margin:0 0 0 5px;padding:0;font-family: "eurostile_lt_stdbold",Helvetica,sans-serif; font-size: 12px; line-height: 12px;}
+#retailers .retailer .name {color: #888888; font-family: "eurostile_lt_stdbold",Helvetica,sans-serif; font-size: 16px; line-height: 18px; margin: 10px 0 0 5px;}
+section #map_canvas p {margin:0;padding:0;}
+.featured-retailers img{width:128px;border:1px solid #999;}
+.discount_img {
+        position: absolute;
+        z-index: 50;
+        cursor: pointer;
+        width: 164px;
+        height: 101px;
+        margin-top: -35px;
+}
+.discount_img img{
+        float: right;
+        position: absolute;
+        right: 0px;
+        border: none;
+}
+.featured-retailers .discount_img img{width:28px;float:left;position:relative;}
+.inline_discount p{
+        color: #666;
+}
+.at_PinItButton {
+        background-image: url('/assets/application/lundinternational/images/pin_it.png') !important;
+        width: 23px !important;
+        height: 23px !important;
+        background-position: center center !important;
+}
+
+.at_PinItButton:hover{
+        background-position: center center !important;
+}
+ul#sitemap {list-style:none; padding-top:21px; padding-bottom:20px;}
+ul#sitemap li { display:block; padding:5px;font-family: "eurostile_lt_stdbold",Helvetica,sans-serif; font-size: 18px; line-height: 20px; font-weight:bold;}
+ul#sitemap li a{color: #cc3333;}
+ul#sitemap li ul {list-style:none;} 
+ul#sitemap li ul li { display:block; font-family: "eurostile_lt_stdbold",Helvetica,sans-serif; font-size: 14px; line-height: 16px;font-weight:normal;}
+.note {font-size:12px !important; line-height:18px !important; padding:0 10px !important;}
+p span {font-weight:bold;font-size:16px;}
+.pagination {font-size:11px; font-weight:normal;float:right !important; /*padding-right:50px;*/}
+.pagination a {padding-left:10px; color:#ff0000;}
+.align-right {text-align:right;}
+.alignleft { float:left;}
+.alignright {float:right; text-align:left !important;}
+li.alignright {font-size:16px;	color:#666;	font-weight:normal;	float:right;text-align:left !important;}
+.col-full-login { margin: 60px 0 0; background:url(/assets/application/lundinternational/images/login-bg.jpg) 0 100px no-repeat; min-height:450px; height:100%;}
+.col-full-portal {background:url(/assets/application/lundinternational/images/login-bg1.jpg) 0 70px no-repeat; min-height:700px; max-height:100%;}
+.col-full-portal .left {width:38%;}
+.col-full-portal .right {width:61%;}
+.col-full-portal .module-h { background: -moz-linear-gradient(top,  rgba(255,255,255,0.89) 0%, rgba(202,202,202,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.89)), color-stop(100%,rgba(202,202,202,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.89) 0%,rgba(202,202,202,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.89) 0%,rgba(202,202,202,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.89) 0%,rgba(202,202,202,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.89) 0%,rgba(202,202,202,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3ffffff', endColorstr='#cacaca',GradientType=0 ); /* IE6-9 */
+
+/*width:65%;*/
+padding-left:20px;
+/*margin-left:120px;*/
+margin-right:40px;
+margin-top:25px;
+padding-top:10px;
+border-radius:6px;
+-moz-border-radius:6px;
+-ms-border-radius:6px;
+-webkit-border-radius:6px;
+-o-border-radius:6px;
+}
+.module-h ul {padding-bottom:20px;}
+.module-h ul {
+	/*padding-bottom:40px;*/
+	padding-top:0;
+	padding-right:35px;
+}
+.module-h p {
+	margin-bottom:6px;
+}
+.module-h:last-child {
+	margin-bottom:20px;
+}
+/* Modules */
+.module-a,.module-b,.module-c,.module-d,.module-e,.module-f,.module-g, .module-g-de{position:relative;overflow:hidden;margin-bottom:15px;padding:17px;border:1px solid #e6e6e6;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#fff;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-moz-linear-gradient(top,#fff 0,#e6e6e6 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e6e6e6));background:-webkit-linear-gradient(top,#fff 0,#e6e6e6 100%);background:-o-linear-gradient(top,#fff 0,#e6e6e6 100%);background:-ms-linear-gradient(top,#fff 0,#e6e6e6 100%);background:linear-gradient(to bottom,#fff 0,#e6e6e6 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e6e6e6',GradientType=0);}
+.module-b{padding-bottom:0;-webkit-box-shadow:0 0 4px 0 rgba(153,153,153,1);-moz-box-shadow:0 0 4px 0 rgba(153,153,153,1);box-shadow:0 0 4px 0 rgba(153,153,153,1);}
+.module-b .list-links{overflow:hidden;}
+.module-b a{font-size:12px;line-height:13px;}
+.module-b .brand-logo{display:block;margin-bottom:10px;}
+.module-b .module-b-img{display:inherit;float:left;margin:0 40px 20px 0;}
+.module-c{padding:0;}
+.module-c h4{margin-bottom:0;font-weight:400;font-size:16px;}
+.module-d{padding-top:10px;border-color:#cc070d;background:#fff;background-image:url(/assets/application/lundinternational/images/bg-module-d.png);background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background-image:url(/assets/application/lundinternational/images/bg-module-d.png),-moz-linear-gradient(top,#fff 0,#e6e6e6 100%);background-image:url(/assets/application/lundinternational/images/bg-module-d.png),-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e6e6e6));background-image:url(/assets/application/lundinternational/images/bg-module-d.png),-webkit-linear-gradient(top,#fff 0,#e6e6e6 100%);background-image:url(/assets/application/lundinternational/images/bg-module-d.png),-o-linear-gradient(top,#fff 0,#e6e6e6 100%);background-image:url(/assets/application/lundinternational/images/bg-module-d.png),-ms-linear-gradient(top,#fff 0,#e6e6e6 100%);background-image:url(/assets/application/lundinternational/images/bg-module-d.png),linear-gradient(to bottom,#fff 0,#e6e6e6 100%);background-position:top center;background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e6e6e6',GradientType=0);}
+.module-d h1{margin-bottom:20px;color:#fff !important;text-shadow:0 -1px 1px #a73636;}
+.module-headerimg{margin:-20px 0 10px -20px;width:120%;height:auto;}
+.module-e{padding:10px 10px 0 10px;-webkit-border-top-left-radius:0;-moz-border-radius-topleft:0;border-top-left-radius:0;-webkit-border-top-right-radius:0;-moz-border-radius-topright:0;border-top-right-radius:0;}
+.module-f {-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+.module-g {-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;padding:15px;}
+.module-g-de {-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;padding:15px; width:95.5%; float:right;font-size: 13px;line-height: 15px;}
+.module-g-de p {font-size:11px;}
+.module-e,.module-f{-webkit-box-shadow:0 0 10px #acacac;-moz-box-shadow:0 0 10px #acacac;box-shadow:0 0  10px #acacac;}
+.module-f>a{background:#999;color:#fff;}
+.module-f .ftop,.module-f .fbottom {display:inline-block;margin-left:-20px;padding:20px;width:100%;text-align:center; font-family:'Eurostile', sans-serif; font-weight:700; font-size:16px;}
+.module-f .ftop {margin-top:-20px;margin-bottom:20px;text-transform:uppercase;}
+.module-f .fbottom {margin-top:20px;margin-bottom:-20px;}
+.module-icon{padding:17px 17px 17px 75px;background-position:5px 50%;background-repeat:no-repeat;}
+.module-icon p {margin-bottom:0 !important; margin-top:0px !important; font-family:'Eurostile', sans-serif; font-size:12px;}
+.module-a p,.module-b p,.module-c p,.module-d p,.module-e p,.module-f p,.module-g p{font-size:14px;line-height:21px; margin-bottom:24px; font-family:Arial, Helvetica, sans-serif;}
+.module-a li,.module-b li,.module-c li,.module-d li,.module-e li,.module-f li,.module-g li{margin:0;list-style:none;}
+.module-a h1.product {text-align:center;}
+.module-a form input[type="text"] {background: url("/assets/application/lundinternational/images/bg-search.png") no-repeat scroll 7px 50% #FFFFFF;
+    border: 0 none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5) inset;
+    height: 15px;
+    min-width: 130px;
+    outline: 0 none;
+    padding: 3px 3px 3px 20px;
+    width: 150px;
+	margin-bottom:33px;
+}
+.module-b ol li {
+    margin: 18px 30px;
+	list-style-type:decimal;
+}
+.module-b ol li:first-child {
+	margin:18px 30px -4px 30px;
+}
+.partlist p {font-size:12px;line-height:19px;}
+.partlist p.partlistveh{font-size:10px;line-height:17px;}
+.red_headline {
+	color:#cc0000;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.bold_gray {
+	font-size:16px;
+	font-weight:bold;
+	color:#666;
+	margin-bottom:10px;
+	line-height:22px;
+}
+.bold_gray ul li {
+	padding:5px;
+	color:#666 !important;
+	line-height:19px;
+}
+.profile_info {
+	font-size:16px;
+	color:#666;
+	font-weight:normal;
+	float:right !important;
+	text-align:left !important;
+	width:67%;
+}
+.portal-table {width:90%; display:table; margin:0 auto; border-left:1px solid #ccc; margin-bottom:30px;border-collapse: collapse;}
+.portal-table thead td{background:rgba(136,136,136,.8); color:#fff; font-size:15px; font-weight:bold; line-height:30px;}
+.portal-table th {background:rgba(204,204,204,.8); color:#888; font-size:15px; font-weight:bold; line-height:26px;}
+.portal-table tr {border-bottom:1px solid #ccc;background:rgba(255,255,255,.8);}
+.portal-table tr:nth-of-type(odd) {background:rgba(0,0,0,.1);}
+.portal-table td {text-align:center; border-right:1px solid #ccc; font-size:14px; line-height:24px;}
+.portal-table td img {padding-top:2px;}
+/*
+changes
+.product_overlay{
+	display:none;
+	background:rgba(0,0,0,.6);
+	width:auto;
+	max-width:640px;
+	padding:10px;
+	min-height:175px;
+	position:absolute;
+	margin:0 auto;
+	top:-1px;
+}
+.product_overlay li {
+	float:left;
+	margin-right:10px;	
+}
+.product_overlay li:last-child {
+	margin-right:0px;
+}
+.product_overlay figure {
+	width:200px;
+	height:175px;
+}
+.product_overlay figcaption {
+	background:url(assets/application/lundinternational/images/overlay-gradient.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color:#fff;
+	text-align:left;
+	font-size:12px;
+	line-height:14px;
+	height:51px;
+	margin-top:-53px;
+	position:relative;
+	z-index:999999;
+	padding-left:5px;
+}
+.product_overlay figcaption strong {
+	width:100%;
+	text-align:left;
+	font-size:14px;
+	padding-top:5px;
+}*/
+.product_overlay{
+	display: none;
+	z-index: 999;
+   /* top: 20%;
+	margin:0 auto;*/
+	position: fixed;
+	top: 40%;
+	-webkit-transform: translateY(-40%);
+  	-ms-transform: translateY(-40%);
+  	transform: translateY(-40%);
+}
+
+.product_overlay ul{
+        list-style-type: none;
+        width: 700px;
+}
+
+.product_overlay li{
+        height: 175px;
+        width: 200px;
+        margin: 0 !important;
+        float: left;
+        position: relative;
+        display: block;
+		border:10px solid rgba(0,0,0,.6) !important;
+       /* border-top: 9px solid rgba(0,0,0,0.6);
+        border-bottom: 9px solid rgba(0,0,0,0.6);*/
+        z-index: 20;
+		padding-left:0 !important;
+		padding-right:0 !important;
+		width:auto !important;
+		border-left:none !important;
+		border-right:none !important;
+		text-align:left !important;
+}
+
+.product_overlay li.first, .product_overlay li.last{		
+		border:10px solid rgba(0,0,0,.6) !important;
+      /*  border-left: 11px solid rgba(0,0,0,0.6);
+        border-right: 11px solid rgba(0,0,0,0.6);*/
+}
+.product_overlay .caption{
+        position: absolute;
+        bottom: -9px;
+        height: 57px;
+        background: transparent url('/assets/application/lundinternational/images/overlay-gradient.png') no-repeat;
+        width: 200px;
+}
+
+.product_overlay .caption strong{
+        clear: both;
+        font-size: 14px;
+        font-weight: 300;
+        display: block;
+        line-height: 14px;
+}
+
+.product_overlay .caption p{
+        font-family: Helvetica, Verdana, san-serif;
+        font-size: 12px;
+        padding: 5px;
+        color: #fffefe;
+		line-height:14px;
+}
+
+.closeoverlay{
+        cursor: pointer;
+        position: absolute;
+        z-index: 1000;
+}
+/* Dealers Edge styles */
+.module-g-de span {float:left; border-right:1px solid #ccc; padding-right:10px; width:20%; font-size:11px; margin-bottom:24px; line-height:18px;}
+.module-g-de span.month_info {color:#cc3333 !important;padding:0 10px 0 20px !important; width:29%;}
+.module-g-de ul {float:right; list-style-type:none; width:40%; margin-top:0; margin-left:5px;}
+.module-g-de ul li:nth-child(2) {padding-top:20px;}
+.module-g-de ul li:nth-child(3) {font-size:11px; padding-top:17px; padding-right:50px;}
+.module-g-de span strong{font-weight:700; font-family:"Eurostile","Helvetica Neue",Helvetica,Arial,sans-serif; }
+.redLink {color:#cc3333;font-family:Arial, Helvetica, sans-serif;}
+.boldLink { font-weight:bold; }
+.module-a h1.title {
+	font-size:19px !important;
+	line-height: 22px;
+    margin-top: 0;
+	color:#888;
+}
+h1.title {
+    margin: 5px 0;
+	font-weight:700;
+	font-size:24px !important;
+	line-height:26px;
+}
+h1.portal {
+	margin:40px 0 20px;
+	font-size:48px;
+	font-family:Arial, Helvetica, sans-serif !important;
+	color:#555;
+}
+h2.login {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif !important;
+	font-size:17px;
+	line-height:18px;
+	padding-top:10px;
+	margin-left:-7px;
+}
+.colr h2.title {
+	margin-bottom:20px;
+}
+h2.title {
+    font-size: 18px;
+    padding: 5px 0 0 0;
+	font-family:'Eurostile', sans-serif;
+	margin-bottom:5px !important;
+}
+h2.testimonial {
+	font-size:16px;
+	padding:5px 0 0 5px;
+	font-family:'Eurostile', sans-serif;
+	font-weight:600;
+	line-height:20px;
+}
+h2.leadership {
+	font-size:18px !important;
+	line-height:12px;
+}
+h3.mc {
+	font-size:14px !important;
+	font-weight:700;
+	margin-top:15px;
+	line-height:15px;
+	color:#888888 !important;
+}
+h3.content {
+	font-size:14px !important;
+	font-weight:700;
+	line-height:15px;
+	font-family:'Eurostile', sans-serif;">
+}
+/* Home page slides */
+.hover_plus {
+    background: url(/assets/application/lundinternational/images/rollover-circle.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 13px;
+    padding-left: 5px;
+	padding-right:5px;
+    width: 13px;
+	
+}
+/*slide 2*/
+#learnmoreff {
+    height: 32px;
+    width: 127px;
+	margin-left:375px;
+	margin-top:-50px;
+}
+/* slide 3 */
+#crossroads {
+    margin-left: 334px;
+    margin-top: -250px;
+}
+#crossroads p {
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    padding-left: 25px;
+    margin-top: -19px;
+    width: 310px;
+	color:#fff;
+	display:block;
+}
+#signmeup1 {
+    height: 32px;
+    width: 127px;
+	margin-left:560px;
+	margin-top:-65px;
+}
+/*slide 4*/
+#learnmore7 {
+    margin-top:-60px;
+    height: 32px;
+    margin-left: 565px;
+    width: 127px;
+}
+#elite {
+    margin-left: 114px;
+    margin-top: -225px;
+	width:200px;
+    z-index: 999;
+}
+#elite p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 5*/
+#wheretobuy1 {
+    margin-top: 50px;
+    height: 32px;
+    margin-left: 544px;
+    width: 127px;
+}
+#hood_shield {
+    margin-left: 645px;
+    margin-top: 13px;
+    z-index: 999;
+}
+#hood_shield p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+	display:none;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -225px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+	
+#ventvisor {
+    margin-left: 520px;
+    margin-top: -120px;
+    z-index: 999;
+}
+#ventvisor p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -210px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+
+#tonneau {
+    margin-top: -207px;
+    margin-left: 200px;
+    z-index: 999;
+}
+#tonneau  p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center;
+	display:none;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    margin-top: -19px;
+    padding-left: 5px;
+    width: 346px;
+    z-index: 555;
+	color:#fff;
+}
+#running_boards {
+    margin-top: 120px;
+    margin-left: 570px;
+    z-index: 999;
+}
+#running_boards p{
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -265px;
+    margin-top: -19px;
+    width: 200px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 6*/
+#lund_runBoard5 {
+    margin-top: -206px;
+    margin-left: 429px;
+    z-index: 999;
+}
+#lund_runBoard5 p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+#learnmore2 {
+    margin-top: 135px;
+    height: 32px;
+    margin-left: 412px;
+    width: 127px;
+}
+/*slide 7*/
+#learnmore4 {
+    margin-top: 200px;
+    height: 32px;
+    margin-left: 28px;
+    width: 127px;
+}
+#aeroskin {
+    margin-top: -327px;
+    margin-left: 258px;
+    z-index: 999;
+}
+#aeroskin p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    padding-left: 18px;
+	margin-left:-230px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+}
+
+/* Drivers Council page styles */
+h1.dc_callout {
+    float: left;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 38px !important;
+    line-height: 38px;
+    margin-left: 20px;
+    margin-top: 0px;
+	font-weight:700;
+}
+h2.dc_callout {
+    clear: left;
+    float: left;
+    font-family: "eurostile",Helvetica,sans-serif !important;
+    font-size: 30px !important;
+    line-height: 30px;
+	margin:0px 0 20px 20px;
+    font-weight:normal;
+	color:#666;
+}
+h3.dc_callout {color:#666; margin:0; line-height:0;font-weight:700; font-size:24px !important;}
+img.dc_callout {
+	float:right;
+}
+.dc-left{width:80%; float:left; margin-bottom:20px;}
+.dc-right{width:20%; float:right; margin-top:-20px; margin-bottom:20px;}
+.dc_left {
+	float:left;
+	width:50%;
+}
+.dc_right {
+	float:right;
+	width:50%;
+}
+#dc_hero_header {
+    background: url(/assets/application/lundinternational/images/dc-hero.jpg) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 280px;
+    max-width: 969px;
+	margin-left:15px;
+}
+#dc_hero_header h1 {
+    font-size: 35px !important;
+    line-height: 38px !important;
+    text-align: center;
+    text-shadow: 1px 1px 2px #FFFFFF;
+	float:left;
+	max-width:280px;
+	margin-top:20px;
+	font-weight:600;
+}
+#dc_hero_header h1 span {
+    background: url(/assets/application/lundinternational/images/dc-h1-line.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    width: 285px;
+}
+#dc_text_callout {
+    background: url(/assets/application/lundinternational/images/cd-share.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+    float: left;
+    height: 230px;
+    margin: 13px 0px 40px 0px;
+    padding: 10px;
+   width: 100%;
+}
+#dc_text_callout p {
+    color: #666666 !important;
+    font-family: "eurostile",Helvetica,sans-serif !important;
+    font-size: 16px !important;
+    line-height: 18px !important;
+    margin-left: -16px;
+    margin-top: 3px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+#dc_text_callout p strong {
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 18px;
+}
+#dc_text_callout p span {
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 46px;
+    line-height: 50px;
+}
+h2.dc_signup {
+    color: #999999;
+    font-size: 25px;
+	font-family: "eurostile", sans-serif;
+	text-shadow: 1px 2px 0 #FFFFFF;
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-weight:normal;
+	/*margin-top:10px;
+	margin-bottom:10px*/;
+	float:none;
+}
+#dc-signup {
+    color: #999999;
+    font-size: 28px;
+	font-weight:normal;
+    padding: 0 14px;
+	background:url(/assets/application/lundinternational/images/signup-line.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+	width:96%;
+	float:left;
+	margin-bottom:20px;
+}
+
+
+#option1 {
+	margin-top:20px !important;
+	/*border-top: 1px solid #888888;*/
+    margin-bottom: 30px;
+	z-index:3;
+	width:100%;
+	position:relative;
+}
+#option1 h3 {
+	margin-top:25px;
+	text-shadow: 1px 2px 0 #FFFFFF;
+	font-size:25px !important;
+}
+#option1 textarea {
+    clear: both;
+    display: block;
+    height: 70px;
+    left: 0;
+    padding: 5px 3px 5px 15px;
+    position: relative;
+    resize: none;
+    top: 7px;
+    width: 97%;
+}
+form #checkboxes input {
+    clear: left;
+    float: left;
+    margin-left: 0;
+    margin-right: 7px;
+    margin-top: 12px;
+}
+#checkboxes input {
+    width: 20px;
+}
+
+#drivcouncsub {float:right !important;}
+
+#option2 {
+    /*border-top: 1px solid #888888;*/
+    margin-bottom: 30px;
+ 	margin-top:-20px;
+    position: relative;
+	z-index:19 !important;
+}
+
+#dc-or {
+    /*background-color: #E1E1E1;*/
+    color: #999999;
+    font-size: 24px;
+    padding: 0 14px;
+    text-align: center;
+	margin-top:55px;
+    z-index: 20 !important;
+	background:url(/assets/application/lundinternational/images/dc-or-line.png) no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+#dc-or h3 {
+	font-size:25px !important;
+	text-shadow: 1px 2px 0 #FFFFFF;
+}
+#option2 h3 {
+	padding-top:20px;
+	text-shadow: 1px 2px 0 #FFFFFF;
+	font-size:25px !important;
+}
+#toast_coa aside {
+    border-left: 1px solid #888888;
+    padding-left: 15px;
+    width:30%;
+	float:right;
+}
+#toast_coa aside p {
+    clear: right;
+    color: #A20617;
+    font-size: 13px !important;
+    font-weight: 300;
+}
+
+#toast_coa {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 13px #A9A9A9;
+    display: block;
+    min-height: 110px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+}
+#toast_coa p {
+    clear: left;
+    float: left;
+    font-size: 18px !important;
+    font-weight: 900;
+    margin-bottom: 5px !important;
+    position: relative;
+    top: -9px;
+    width: 60%;
+}
+
+#toast_coa p a {
+    clear: left;
+    float: right;
+    margin-top:5px;
+}
+
+.cc-left {
+	float:left;
+	width:55%;
+}
+.cc-right {
+	//float:left;
+	//width:45%;
+	text-align:left;
+	//clear:right;
+}
+.cc-right p {
+	color: #999999;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.clear {
+	clear:left;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+.left article {
+	padding-left:40px;
+}
+.right {
+    float: left;
+    width: 50%;
+}
+.contact_left {
+	width:60%;
+	float:left;
+	padding-right:30px;
+}
+.contact_right {
+	padding-top:20px;
+	width:20%;
+	float:left;
+}
+#contact_form {
+    float: left;
+}
+#contact_form .fname {
+	float:left;
+	padding-right:10px;
+}
+#contact_form .city {
+	float:left;
+	padding-right:10px;
+}
+#contact_form .state{
+	float:left;
+	padding-right:10px;
+}
+#contact_form label {
+	font-size:10px;
+	color:#333333;
+	font-weight:bold;
+}
+/*#contact_form input {
+	height:18px;
+}*/
+
+#contact_form input:focus, #contact_form textarea:focus {
+	box-shadow: 0 0 10px blue inset;
+}
+#forms {
+	width:100%;
+	font-size:10px;
+	color:#333333;
+}
+#forms input {
+	height:15px;
+	width:70%;
+}
+
+#forms textarea {
+	width:83%;
+}
+#forms input:focus, #forms textarea:focus {
+	box-shadow: 0 0 10px blue inset;
+}
+#forms input[type="radio"], #forms input[type="checkbox"] {
+	padding:0;
+	width:auto;
+	height:auto;
+}
+#forms label {
+	color:#333333;
+	font-size:10px;
+    display:block;
+}
+#forms select {
+	width:25%;
+}
+#forms .formcolumn {
+	width:49%;
+	float:left;
+}
+#forms .formcolumn:first-of-type{
+	margin-right:2%;
+}
+#forms .forcolumn label, #forms .formcolumn fieldset {
+	font-family:'Eurostile', sans-serif;
+	display:block;
+	margin-top:2em;
+	margin-bottom:3px;
+}
+#forms fieldset {
+	width:98%;
+}
+#forms fieldset ul {
+	list-type:none;
+	margin:0;
+	padding:0;
+}
+#forms fieldset ul li {
+	display:inline-block;
+	margin-bottom:5px;
+	margin-right:1em;
+}
+#login-form {
+	text-align:center;
+}
+#login-form label {
+	text-align:center;
+	margin-left:-15px;
+	color:#777 !important;
+}
+#login-form input {
+	padding:2px;
+	width:90%;
+	margin-left:-13px;
+}
+#login-form input[type="submit"] {
+	padding-left:5px;
+	padding-right:5px;
+	margin:8px 0 8px 0;
+	width:70px;
+}
+
+ul.manufacturing li {margin:0px 20px 0 0px;  line-height:25px; font-size:14px; list-style-type:disc !important;}
+ul:nth-child(2).manufacturing {margin-top:20px; margin-left:20px;}
+ul:nth-child(4).manufacturing {margin-top:50px; margin-left:20px;}
+ul:nth-child(6).manufacturing {margin-top:50px; margin-left:20px;}
+ul.simple {padding-bottom:15px;}
+ul.simple li {margin:0px 0 0 30px; line-height:21px; font-size:14px; list-style-type:disc !important;}
+.boxes {font-size:12px !important; line-height:14px !important; font-family:Arial, Helvetica, sans-serif !important; padding-right:100px !important;}
+.form-row {clear: both; height: 24px; margin-bottom: 10px; }
+.form-row input {/*float: left;*/ margin-bottom: 12px; margin-right: 20px; margin-top: -4px; max-width: 180px; height:20px;}
+.form-row label {color: #333333; /*float left;*/ font-size: 10px; width: 90px; margin-top:0px; padding-top:0;}
+.form-row label,
+.form-row label.brand_label { clear: none;  float: left; margin-right: 10px; width: auto; margin-top:0px; padding-bottom:2px;}
+.form-row input,
+.form-row input.brand_radio { margin-bottom: 5px; margin-right: 3px; margin-top: 0; width: 15px !important;}
+label {color: #979797 !important; font-size:12px !important; display: block; font-weight: normal;}
+.form-row input,
+.form-row input.brand_radio { margin-bottom: 5px; margin-right: 3px; margin-top: 0; width: 15px !important;}
+.form-row label:first-child {
+    clear: left;
+}
+#forms .formcolumn select,
+.module-b #forms select { width: 70%; }
+.contact_left #forms select { width: 70%; }
+.module-b #forms .form-row select { width: 30%; }
+#DE-brand {
+    clear: both !important;
+    margin-bottom: 5px;
+    width: 100% !important;
+}
+#dealedgesub {
+    clear: both !important;
+    margin: 20px 0;
+}
+.btn-submit {
+    margin: 10px 0 0;
+    width: 100px !important;
+	height:24px !important;
+}
+.vcard {
+    float: left;
+    font-size: 1.2em;
+    width: 220px;
+}
+.vcard .type, .vcard .country-name {
+    display: none;
+}
+.nomaps {
+    display: none;
+    visibility: hidden;
+}
+select {
+    display: inline;
+    float: none;
+}
+#title{
+	width:60px;
+}
+#sortby {
+	width:100px;
+}
+#showperpage {
+	width:50px;
+}
+.image-outline{border:1px solid #ccc;}
+.list-styles li{float:left;margin-left:2% !important;width:32%;}
+.list-styles li h1.title {font-size:23px !important;}
+.list-styles li:first-child{margin-left:0 !important;width:66%;}
+.list-styles p{font-family:'Eurostile', sans-serif;}
+.list-thumbnail{margin:0;font-family:Arial,Helvetica,sans-serif !important;}
+.list-thumbnail li{margin:0 0 -12px 0 !important;width:100% !important;}
+.list-thumbnail strong{font-size:11px;}
+.list-thumbnail img,.list-thumbnail p{float:left;}
+.list-thumbnail p{width:100%;font-size:9px;line-height:10px;}
+.list-thumbnail img{margin:0 10px 0 0;border:1px solid #000;}
+.list-vehicles-products{margin-top:10px;list-style:none !important;}
+.list-vehicles-products li{float:left;margin:0 20px 20px 0 !important;}
+#showroom_gallery .list-vehicles-products li{float:left;margin:0 15px 15px 0 !important;}
+/*.page .list-vehicles li:nth-child(odd){clear:none;}
+.list-vehicles li:nth-child(odd){clear:left;}
+.page .module-b .list-vehicles li:nth-child(odd){clear:left !important;}*/
+.list-vehicles-products a{display:inline-block;font-size:12px;line-height:13px; font-family:'Eurostile', sans-serif;}
+.list-vehicles-products>li{width:200px;min-height: 200px;}
+#showroom_gallery .list-vehicles-products>li{width:122px;min-height: 122px;}
+#showroom_gallery .list-vehicles-products li img{border:1px solid #000;}
+.list-vehicles-products ul{list-style:none !important;}
+.list-vehicles-products ul li{margin:0 !important;padding-left:2%;width:36%;border-left:1px solid #888;text-align:right;line-height:14px;}
+.list-vehicles-products ul li:first-child{padding-right:2%;padding-left:0;width:59.5%;border:0;text-align:left;}
+.list-vehicles{margin-top:10px;list-style:none !important;}
+.list-vehicles li{float:left;margin:0 20px 30px 0 !important;}
+/*.page .list-vehicles li:nth-child(odd){clear:none;}
+.list-vehicles li:nth-child(odd){clear:left;}
+.page .module-b .list-vehicles li:nth-child(odd){clear:left !important;}*/
+.list-vehicles a{display:inline-block;font-size:12px;line-height:13px; font-family:'Eurostile', sans-serif;}
+.list-vehicles>li{width:209px; min-height:175px;}
+.list-vehicles ul{list-style:none !important;}
+.list-vehicles ul li{margin:0 !important;padding-left:2%;width:36%;border-left:1px solid #888;text-align:right;line-height:14px;}
+.list-vehicles ul li:first-child{padding-right:2%;padding-left:0;width:59.5%;border:0;text-align:left;}
+.star-rating{float:right;width:67px;height:13px;background:url(/assets/application/lundinternational/images/bg-star-rating.png) 0 -1px no-repeat;margin-left: 0 !important;margin-top: 0 !important;}
+.star-rating li{display:inline-block;overflow:hidden;background:url(/assets/application/lundinternational/images/bg-star-rating.png)0 -28px no-repeat;text-indent:-999px;margin-left: 0 !important;margin-top: 0 !important;}
+.list-links{border-top:1px solid #dcdcdc;border-bottom:1px solid #f3f3f3;list-style:none !important; font-family:'Eurostile', sans-serif;}
+.list-links li{margin:0 !important;padding:5px 0;border-top:1px solid #f3f3f3;border-bottom:1px solid #dcdcdc;}
+.list-links li:last-child{margin-bottom:8px !important;}
+.list-links a{font-size:12px;line-height:13px;}
+.list-links li.active a:before{margin-top:5px;}
+.list-logos li:nth-child(4n){margin-right:0 !important;}
+.list-logos li{display:inline-block;margin:0 0px 7px 2px !important;}
+.list-logos li a{display:block;}
+.list-logos img{border:1px solid #ccc;}
+.list-product-thumbnails {margin-bottom:10px;display:inline-block;}
+.list-product-thumbnails li a {display:block;}
+.list-product-thumbnails li img{border:1px solid #ccc;width:77px;height:auto;}
+.list-product-thumbnails li {float:left;margin-right:10px;}
+.list-parts {position:relative;}
+.list-parts li {clear:both;float:left;margin-bottom:20px;padding-bottom:20px;position:relative;border-bottom:1px solid #888;}
+.list-parts li:last-child{border-bottom:0;margin-bottom:0;}
+.list-parts li img,.list-parts li strong,.list-parts li em {float:left;margin-right:15px;}
+.list-parts li strong,.list-parts li em {width:153px;font-size: 12px; font-weight:400;font-style:normal;text-align:left;line-height: 13px;padding-top:30px}
+.list-parts li strong:last-child{margin-right:0;}
+.list-news li{list-style: none;margin-left:0!important;clear:both;margin-bottom:35px !important;}
+.list-news strong {font-size:12px; font-family:'Eurostile', sans-serif;}
+.list-news h2{margin-bottom:0; font-size:16px;}
+.list-news h2 a{color:#c33; font-size:14px;}
+.list-displays {position:relative; padding-left:0px;}
+.list-displays p {font-size:16px; font-family:"Eurostile","Helvetica Neue",Helvetica,Arial,sans-serif; font-weight:600; margin-bottom:0px !important; margin-top:8px;}
+.list-displays li img {background:none !important; border:none !important; float:left; padding-top:10px; padding-left:10px; padding-right:20px; margin-left:-100px;}
+/*.list-displays li:first-child {background:none !important; border:none !important; float:left;}*/
+.list-displays li {clear:both;min-height:135px;/*float:left;*/margin-bottom:20px;padding-bottom:20px;position:relative; margin-left:100px; background: #ffffff; /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNmU2ZTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(top,  #ffffff 0%, #e6e6e6 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #ffffff 0%,#e6e6e6 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-8 */
+border:1px solid #ccc;}
+.list-displays li:last-child{margin-bottom:10px;}
+.list-displays li h1, li strong,.list-displays li em {float:left; padding-right:15px;}
+.list-displays li strong,.list-displays li em {width:215px;font-size: 11px; font-weight:400;font-style:normal;text-align:left;line-height: 13px;padding-top:10px;}
+img.dropshadow {-webkit-box-shadow: 5px 5px 8px #a5a5a5;-moz-box-shadow: 5px 5px 8px #a5a5a5;box-shadow: 5px 5px 8px #a5a5a5;}
+.tabs li{display:inline-block;margin:0 1px !important; font-family:'Eurostile', sans-serif;}
+.tabs li:first-child{margin-left:0 !important;}
+.tabs>li .active,.tabs>li a:hover{border-bottom:1px solid #fff;background:#fff;}
+.tabs>li a{display:block;margin-bottom:-1px;padding:7px 15px;border:1px solid #ccc;-webkit-border-top-left-radius:5px;-moz-border-radius-topleft:5px;border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topright:5px;border-top-right-radius:5px;background:#ddd; font-size:14px;}
+.tab-text{margin-bottom:20px;padding:20px;border:1px solid #ccc;-webkit-border-top-right-radius:5px;-moz-border-radius-topright:5px;border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-moz-border-radius-bottomright:5px;border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomleft:5px;border-bottom-left-radius:5px;background:#fff;}
+.testimonials li{display:none; }
+.coll ul.testimonials li {padding-right:15px;padding-left:5px;}
+.colr ul.testimonials {margin-top:15px;}
+.colr ul.testimonials li {font-size: 18px;line-height: 24px; list-style-type:none; margin-left:0; margin-bottom:30px;}
+.colr ul.testimonials img {padding-right:6px; padding-left:3px;}
+.colr .module-b h3 {font-size:25px !important; line-height:28px; width:80%;}
+.colr .module-b h3.smaller {font-size:14px !important; color:#666 !important; font-weight:bold;}
+.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:0;}
+.slides,.flex-control-nav,.flex-direction-nav{margin:0 !important;padding:0;list-style:none !important;}
+.flexslider{margin:0;padding:0;}
+.flexslider .slides>li{display:none;margin-bottom:0;margin-left:0 !important;-webkit-backface-visibility:hidden;}
+.flexslider .slides img{display:block;width:100%;}
+.flex-pauseplay span{text-transform:capitalize;}
+.slides:after{display:block;visibility:hidden;clear:both;height:0;content:"\0020";line-height:0;line-line-line-line-line-;}
+html[xmlns] .slides{display:block;}
+* html .slides{height:1%;}
+.no-js .slides>li:first-child{display:block;}
+.flexslider{position:relative;margin:0 0 40px;zoom:1;}
+.flex-viewport{max-height:2000px;-webkit-transition:all 1s ease;-moz-transition:all 1s ease;-o-transition:all 1s ease;transition:all 1s ease;}
+.loading .flex-viewport{max-height:300px;}
+.flexslider .slides{zoom:1;}
+.carousel li{margin-right:5px;}
+.flex-direction-nav{*height:0;}
+.flex-direction-nav a{position:absolute;top:0;z-index:10;display:block;overflow:hidden;margin:0;width:40px;height:100%;background:#333;opacity:.5;opacity:0;cursor:pointer;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;transition:all .3s ease;}
+.flex-direction-nav .flex-prev{left:0;text-indent:-999px;}
+.flex-direction-nav .flex-next{right:0;text-align:right;text-indent:999px;;}
+.flexslider:hover .flex-prev{left:0;opacity:.5;}
+.flexslider:hover .flex-next{right:0;opacity:.5;}
+.flex-direction-nav .flex-disabled{opacity:0 !important;filter:alpha(opacity=0);cursor:default;}
+.flex-pauseplay a{position:absolute;bottom:5px;left:10px;z-index:10;display:block;overflow:hidden;width:20px;height:20px;color:#000;opacity:.8;cursor:pointer;}
+.flex-pauseplay a:before{display:inline-block;content:'\f004';font-size:20px;font-family:"flexslider-icon";}
+.flex-pauseplay a:hover{opacity:1;}
+.flex-pauseplay a.flex-play:before{content:'\f003';}
+.flex-control-nav{position:absolute;bottom:-30px;width:100%;text-align:right;}
+.flex-control-nav li{display:inline-block;margin:0 0 0 7px;text-align:left;zoom:1;*display:inline;}
+.flex-control-paging li a{display:block;width:10px;height:10px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;background:#888;-webkit-box-shadow:inset 1px 1px 3px 0 rgba(0,0,0,0.7);-moz-box-shadow:inset 1px 1px 3px 0 rgba(0,0,0,0.7);box-shadow:inset 1px 1px 3px 0 rgba(0,0,0,0.7);text-indent:-9999px;cursor:pointer;-o-border-radius:20px;-o--o--o--o--o-;}
+.flex-control-paging li a:hover{background:#c33;}
+.flex-control-paging li a.flex-active{background:#c33;cursor:default;}
+
+footer{margin-bottom:40px;height:42px;}
+footer a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:11px;font-family:Arial,Verdana,Helvetica,sans-serif;}
+footer .logo{margin:9px 0 9px 14px;width:89px;}
+.bottomnav{float:left;}
+.bottomnav ul{float:left;margin:15px 0 0 0;line-height:11px;}
+.bottomnav li{float:left;margin-left:25px;}
+.bottomnav li:nth-child(4){padding-right:25px;border-right:2px solid #ccc;}
+
+
+.dealers_edge ul {margin-bottom:15px;}
+.dealers_edge ul li {
+	margin-left:2em;
+	list-style-type:disc;
+	line-height:21px;
+}
+.product-list {width:100%;}
+.product-description p {margin-bottom:3px;}
+.product-list li {list-style:none !important; margin-left:0 !important; float:left; display:flex; flex-flow:row wrap;}
+li.product {min-height:230px;}
+.product a img {float:left;}
+.product-description{float:left;padding-left:5px; display:inline; width:165px; margin-right:15px;}
+.product-description h4 { font-size:16px; padding-left:5px;}
+.product-description p {font-size:11px;line-height:15px; padding-left:5px;}
+section .colr-products ul li {float:left; margin-top:10px;}
+.no-border {border-top:none;}
+h1.title{clear:none;}
+.mid {margin-right:40px;}
+.product-top { display: -ms-flexbox;  /* MID: IE 10 */ display: -webkit-flex;   /* NEW, Chrome 21–28, Safari 6.1+ */ display: flex;-prefix-box-
+flex: 1; /* old spec webkit, moz */
+   -webkit-flex: 1; flex: 1;   -webkit-flex-direction: row;}
+.product-top li img {width:100%;}
+.product-top .module-a {width:245px; margin-left:15px;}
+.star-rating-reviews {float:left;margin:2px 10px 7px 0px;width:67px;height:13px;background:url(/assets/application/lundinternational/images/bg-star-rating.png) 0 -1px no-repeat; }
+.star-rating-reviews li{display:inline-block;overflow:hidden;background:url(/assets/application/lundinternational/images/bg-star-rating.png)0 -28px no-repeat !important;text-indent:-999px; margin-top: 0px !important;margin-left: 0px !important;}
+#tab2 ul li,
+.tab-text h4 {font-family:'Eurostile', sans-serif; font-size:12px; font-weight:300;}
+.description {border-bottom:1px solid #333; font-size:12px; color:#888; font-family:'Eurostile', sans-serif; font-weight:300;}
+.review ol {width:100%;}
+.review ol.star-rating-reviews {width:67px;}
+.review ol li {list-style-type:none; margin:0 !important;}
+.report {float:right; line-height:13px;margin-left:5px;}
+.review_text {width:100%; margin:10px 0 15px;padding:15px 0 10px; clear:both;}
+.review .vcard {width:auto;}
+.review-top {padding-bottom:40px;}
+.report a {font-size:10px;font-family:'Eurostile', sans-serif; font-weight:300;}
+.product-img {float:left; width:58%; margin-right:10px;}
+.product-select {width:95%; }
+.product-select h1 {font-size:14px !important; font-weight:300;}
+#tab3 .pagination {border-bottom:1px solid #333; font-family:'Eurostile', sans-serif; font-weight:300; font-size:12px; float:left !important; w
+idth:100%; padding-bottom:10px; margin:10px 0;}
+#tab3 .pagination a {padding-right:10px;}
+#tab2 ul,#tab2 ul li{list-style: disc outside none;line-height:25px;margin-left:10px;}
+.cur_page {font-weight:900;}
+.colr .module-b .parts h3,
+.parts h3{font-family:'Eurostile',sans-serif; font-weight:600; color:#666 !important; font-size:18px !important; line-height:18px; margin-bottom:10px;}
+.parts ul {width:100%; list-style:none; display:block;}
+.parts li {float:left; width:100%; border-bottom:1px solid #ccc; min-height:105px; margin-bottom:10px; padding:right:10px; text-align:center; }
+.parts li:last-child {border-bottom:none;margin-bottom:15px;}
+.parts li img {float:left;}
+.details {margin-top:25px;}
+.details p {float:left; display:inline-block;padding-top:8px; text-align:left;font-family:'Eurostile', sans-serif; width:22%; font-size:12px; line-height:13px; color:#888;padding-left:40px; }
+.details a {width:auto;}
+.addl_views {display:none;}
+.slider_module {display: -ms-flexbox;   display: -webkit-flex;   display: flex;-prefix-box-flex: 1; -webkit-flex: 1; flex: 1;   -webkit-flex-direction: row; width:100%;}
+.slider_module .coll {width:250px;}
+
+.addlminiimg, .miniimageintro, .miniimage {border:1px solid #CCCCCC; }
+#thumbs .addlminiimg, #thumbs .miniimageintro, #thumbs .miniimage {margin: 5px 5px 0 0; border:1px solid #CCCCCC;}
+.addlminiimg:hover, .miniimageintro:hover, .miniimage:hover {cursor:pointer; }
+#zoom {border:1px solid #5d5d5d; }
+.imgdialog { cursor:pointer; }
+.xpopdrop ul {display:none;}
+.ui-dialog .ui-dialog-title{font-family: "eurostile",Helvetica,sans-serif;}
+.ui-widget #edit_vehicle input,
+.ui-widget #edit_vehicle select,
+.ui-widget #edit_vehicle textarea,
+.ui-widget #edit_vehicle button {font-family: "eurostile",Helvetica,sans-serif;font-size: 12px;}
+.ui-widget #login_review select {font-family: "eurostile",Helvetica,sans-serif;font-size: 11px;}
+.ui-widget section select {margin-bottom:0;}
+
+.loadingmodal {display:none; position:fixed; z-index:9999999; top:0; left:0; height:100%; width:100%; background: rgba( 255, 255, 255, .8 ) url('/assets/application/lundinternational/images/FhHRx.gif') 50% 50% no-repeat;}
+body.loading {overflow: hidden;}
+body.loading .loadingmodal {display: block;}
+/*
+  @@ Pagination
+*/
+.holder { text-align:right;margin: 5px 0; font-family: "eurostile",Helvetica,sans-serif;}
+.holder a {
+  font-size: 12px;
+  font-family: "eurostile",Helvetica,sans-serif;
+  cursor: pointer;
+  margin: 0 3px;
+  color: #333;
+}
+.holder a:hover {
+  color: #cc3333;
+}
+.holder a.jp-previous { margin-right: 5px; }
+.holder a.jp-next { margin-left: 5px; }
+.holder a.jp-current, a.jp-current:hover {
+  color: #ed4e2a;
+  font-weight: bold;
+}
+.holder a.jp-disabled, a.jp-disabled:hover { color: #bbb; }
+.holder a.jp-current, a.jp-current:hover,
+.holder a.jp-disabled, a.jp-disabled:hover {
+  cursor: default;
+  background: none;
+}
+
+.holder span { margin: 0 3px; }
+.open-circ li {list-style:circle;margin-left:15px;font-size:14px; color:#888; font-family:'Eurostile', sans-serif;}
+.onefourth {width:30%; float:left;}
+.threefourth {width:66%;margin-left:20px; float:right; margin-bottom:30px;}
+.threefourth .alignright {width:57%;}
+.disc {margin-bottom:20px;}
+.disc li {list-style:disc; margin-left:14px; font-family:'Eurostile', sans-serif;}
+.product-pgs p {font-family:'Eurostile',sans-serif;}
+/*Storage Boxes*/
+.storage .list-styles > li:first-child {width:38% !important;}
+.storage .list-styles > li:nth-child(2) {width:58%; padding-left:10px;}
+.storage .list-styles > li ul li:nth-child(odd) {float:left;width:49% !important;}
+.storage .list-styles > li ul li:nth-child(even) {float:right; text-align:left !important; width:49% !important;}
+
+#hover_captions{
+        width: 725px;
+        height: 425px;
+        position: absolute;
+        top: 0;
+        left: 0;
+}
+#hover_captions p sup{
+        position: absolute;
+}
+
+#hover_captions .hover_plus{
+        background: url(/assets/application/lundinternational/images/rollover-circle.png) no-repeat center transparent;
+        height: 13px;
+        width: 13px;
+        color: white;
+        font-size: 15px;
+        padding-left: 5px;
+}
+
+#hover_captions figure:hover{
+        cursor: pointer;
+}
+#hover_captions figure div{
+        width: 0px;
+        overflow: hidden;
+        height: 25px;
+        position: relative;
+}
+#hover_captions p{
+        display: none;
+        background: url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat transparent left center;
+        width: 246px;
+        height: 25px;
+        padding-left: 18px;
+        position: absolute;
+        top: -13px;
+        padding-top: 13px;
+        left: -258px;
+        z-index: 555;
+        font-family: "eurostile_lt_stdregular", Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width:1100px){
+.logo {margin-left:0;}
+.brands li {width:173px;}
+.brands li img {max-width:90%;}
+.brands h4 {width:150px;}
+.header-inner,.content-inner,.footer-inner,.topnav ul{width:760px;}
+.colr,.coll-home,.home .colr{width:485px;}
+.coll-home .visible {min-height:440px;}
+.mid{margin-right:25px;}
+.left{float:none; width:100%;}
+.right {float:none; width:80%;}
+.module-h {margin-left:40px !important; box-shadow:2px 2px 6px 2px #999;}
+.profile_info {width:70%;}
+.colr-products{margin-left:10px !important; float:none; border-top:none;}
+.colr-products .left {margin-left:10px;}
+.colr-products .left p{padding-left:245px;}
+.colr-products .right {margin-left:10px;}
+.colr {margin-left: 10px;}
+.colr .module-b h3 {width:100%;}
+.list-displays li {min-height:232px;}
+.list-displays li:nth-child(2) em {padding-left:90px;}
+.dc-left{width:80%; float:left;}
+.dc-right{width:20%; float:right; margin-bottom:10px; margin-top:0px;}
+.dc_left{width:100%; float:none;}
+.dc_right{width:100%; float:none;}
+#option1 {float:none; width:100%;}
+figure #dc-signup{float:none; width:100%;}
+.module-g-de {width:95%;}
+.sfmenu li{margin:0;}
+.sfmenu li a{padding:0 6px;font-size:11px;}
+#toast_coa {width:90%; height:150px;}
+#toast_coa p {width:70%; margin-top:10px;}
+#toast_coa p a {margin-top:25px; float:right;}
+#toast_coa aside {width:25%; padding-left:10px; margin-top:10px;}
+ul.manufacturing li {margin:0px 20px 0 0px;  line-height:25px; font-size:14px; list-style-type:disc !important;}
+ul:nth-child(2).manufacturing {margin-top:0; float:left; margin-bottom:20px;}
+ul:nth-child(4).manufacturing {float:left; margin-top:0; margin-bottom:20px;}
+ul:nth-child(6).manufacturing {float:left; margin-top:0; margin-bottom:20px;}
+/*.list-displays li em {float:right; padding-right:65px;}*/
+#forms input {width:90%;}
+#forms textarea {width:93%;}
+
+	/*slide 2*/
+#learnmoreff {
+    height: 32px;
+    width: 127px;
+	margin-left:200px;
+	margin-top:-50px;
+}
+/* slide 3 */
+#crossroads {
+    margin-left: 214px;
+    margin-top: -170px;
+    z-index: 999;
+}
+#crossroads p {
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    padding-left: 19px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+}
+#signmeup1 {
+    height: 32px;
+    width: 100px;
+	margin-left:372px;
+	margin-top:-45px;
+}
+/*slide 4*/
+#learnmore7 {
+    margin-top:-60px;
+    height: 32px;
+    margin-left: 325px;
+    width: 127px;
+}
+#elite {
+    margin-left: 114px;
+    margin-top: -160px;
+	width:200px;
+    z-index: 999;
+}
+#elite p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 5*/
+#wheretobuy1 {
+    margin-top: 10px;
+    height: 32px;
+    margin-left: 344px;
+    width: 127px;
+}
+#hood_shield {
+    margin-left: 430px;
+    margin-top: 0px;
+    z-index: 999;
+}
+#hood_shield p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+	display:none;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -220px;
+    padding-left: 18px;
+    margin-top: -19px;
+	padding-top:4px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+	
+#ventvisor {
+    margin-left: 335px;
+    margin-top: -140px;
+    z-index: 999;
+}
+#ventvisor p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -210px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+
+#tonneau {
+    margin-top: -137px;
+    margin-left: 100px;
+    z-index: 999;
+}
+#tonneau  p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+	display:none;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 346px;
+    z-index: 555;
+	color:#fff;
+}
+#running_boards {
+    margin-top: 100px;
+    margin-left: 365px;
+    z-index: 999;
+}
+#running_boards p{
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -200px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 200px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 6*/
+#lund_runBoard5 {
+    margin-top: -145px;
+    margin-left: 276px;
+    z-index: 999;
+}
+#lund_runBoard5 p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+#learnmore2 {
+    margin-top: 85px;
+    height: 32px;
+    margin-left: 273px;
+    width: 127px;
+}
+/*slide 7*/
+#learnmore4 {
+    margin-top: 120px;
+    height: 32px;
+    margin-left: 18px;
+    width: 127px;
+}
+#aeroskin {
+    margin-top: -223px;
+    margin-left: 230px;
+    z-index: 999;
+}
+#aeroskin p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+	margin-left:-230px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+}
+/*.product{margin-left:15px;}*/
+.product-description{}
+.no-border h1 {margin-left:64px !important;}
+.product-top { -webkit-flex-direction: column-reverse; flex-direction:column-reverse;}
+.product-top li img {width:95%;}
+.product-top .module-a {width:auto; margin-left:0;}
+.alignleft span {display:block; margin-top:23px;}
+.review ol:first-child {margin-top:20px;}
+	
+.details {margin-top:12px; }
+.details p {display:block; width:auto; padding-left:30px; padding-right:15px; padding-top:0;}
+
+.slider_module { -webkit-flex-direction: column-reverse; flex-direction:column-reverse;}
+.slider_module .colr {width:97%;}
+.slider_module .coll {width:97%;}
+.slider_module .coll .module-a{float:left; width:235px; margin-right:10px; min-height:152px;}
+.onefourth {width:50%; float:none;}
+.threefourth{width:100%; float:none;clear:left;margin-left:0; padding-top:20px;}
+/*storage boxes*/
+.storage .list-styles > li:first-child {width:100% !important;}
+.storage .list-styles > li:nth-child(2) {width:100%; padding-left:0px; margin-left:0 !important;}
+}
+@media only screen and (max-width:1024px){
+.brands li {width:173px !important;}
+.brands li img {max-width:90%;}
+.dc_left{width:100%}
+.dc_right{width:100%;}
+#toast_coa {width:90%; height:150px;}
+#toast_coa p {width:70%; margin-top:10px;}
+#toast_coa p a {margin-top:25px; float:right;}
+#toast_coa aside {width:25%; padding-left:10px; margin-top:10px;}
+.right {
+	width:80%; 
+	float:none;
+}
+.col-full-portal .right {width:80%;}
+h1.portal {padding-top:30px;}
+.colr-products .left {margin-right:10px !important;}
+.colr-products .right {margin-left:10px;}
+.list-displays li {min-height:232px;}
+.dc-left{width:80%; float:left;}
+.dc-right{width:20%; float:right;  margin-top:0px;}
+.dc_left {width:100%; float:none;}
+.dc_right {width:100%; float:none;}
+.cc-left {
+	float:none;
+	width:100%;
+}
+.cc-right {
+	float:none;
+	width:100%;
+	text-align:left;
+	clear:right;
+	padding-top:15px;
+}
+#contact_form .fname {
+	float:none; 
+	width:100%;
+	 
+}
+.contact_left {padding-right:0;}
+/*slide 2*/
+#learnmoreff {
+    height: 32px;
+    width: 127px;
+	margin-left:200px;
+	margin-top:-50px;
+}
+/* slide 3 */
+#crossroads {
+    margin-left: 214px;
+    margin-top: -170px;
+    z-index: 999;
+}
+#crossroads p {
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    padding-left: 19px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+}
+#signmeup1 {
+    height: 32px;
+    width: 100px;
+	margin-left:372px;
+	margin-top:-45px;
+}
+/*slide 4*/
+#learnmore7 {
+    margin-top:-60px;
+    height: 32px;
+    margin-left: 325px;
+    width: 127px;
+}
+#elite {
+    margin-left: 114px;
+    margin-top: -160px;
+	width:200px;
+    z-index: 999;
+}
+#elite p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 5*/
+#wheretobuy1 {
+    margin-top: 10px;
+    height: 32px;
+    margin-left: 344px;
+    width: 127px;
+}
+#hood_shield {
+    margin-left: 430px;
+    margin-top: 0px;
+    z-index: 999;
+}
+#hood_shield p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+	display:none;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -220px;
+    padding-left: 18px;
+    margin-top: -19px;
+	padding-top:4px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+	
+#ventvisor {
+    margin-left: 335px;
+    margin-top: -140px;
+    z-index: 999;
+}
+#ventvisor p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -210px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+
+#tonneau {
+    margin-top: -137px;
+    margin-left: 100px;
+    z-index: 999;
+}
+#tonneau  p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+	display:none;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 346px;
+    z-index: 555;
+	color:#fff;
+}
+#running_boards {
+    margin-top: 100px;
+    margin-left: 365px;
+    z-index: 999;
+}
+#running_boards p{
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -200px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 200px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 6*/
+#lund_runBoard5 {
+    margin-top: -145px;
+    margin-left: 276px;
+    z-index: 999;
+}
+#lund_runBoard5 p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+#learnmore2 {
+    margin-top: 85px;
+    height: 32px;
+    margin-left: 273px;
+    width: 127px;
+}
+/*slide 7*/
+#learnmore4 {
+    margin-top: 120px;
+    height: 32px;
+    margin-left: 18px;
+    width: 127px;
+}
+#aeroskin {
+    margin-top: -223px;
+    margin-left: 230px;
+    z-index: 999;
+}
+#aeroskin p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+	margin-left:-230px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+}
+.col-full {width:90%; margin:0 auto;}
+.coll-buy {float:none;width:90%; margin:0 auto; padding-left:0;}
+.coll-home .visible {min-height:440px;}
+.table{display:table; margin:0 auto; width:100%;}
+ul#auto-logos {list-style:none; min-width:400px;padding-top:21px; padding-bottom:20px; text-align:center;}
+ul#auto-logos li { display:inline; padding:25px; text-align:center;}
+.colr-buy{float:none;width:90%; padding-right:0px; margin:0 auto;}
+ul#retailers {list-style:none; width:32%; text-align:left; float:left;}
+ul#retailers li {display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-center{list-style:none; width:32%; text-align:left; float:left;}
+ul#retailers-center li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-right{list-style:none; width:32%; text-align:left; float:left;}
+ul#retailers-right li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+.alignleft span {display:block; margin-top:23px;}
+    .review ol:first-child {margin-top:20px;}
+/*.product_overlay{max-width:200px;}
+.product_overlay li {float:none; margin-bottom:10px;}
+.product_overlay li:last-child{margin-bottom:0;}*/
+}
+@media only screen and (max-width:979px){
+.hide-on-mobile {display:none;}
+.brands li {width:173px;}
+.brands li img {max-width:90%;}
+.align-right {width:78%;text-align:left; }
+.pagination {float:none; text-align:left;}
+.right {
+	width:100% !important;
+	float:none;
+}
+.module-h {
+	width:60% !important; 
+	float:none;
+	box-shadow:2px 2px 6px 2px #999;
+}
+.coll-home .visible {min-height:440px;}
+.product_overlay{left:13%;top:25%;}
+.dc_left{width:100%}
+.dc_right{width:100%;}
+.colr-products .left {margin-left:10px;}
+.colr-products .right{ margin-left:10px;}
+.colr-products {margin-left:10px;}
+.dc-left{width:70%; float:left; margin-bottom:30px;}
+.dc-right{width:25%; float:right; margin-bottom:30px !important; }
+.list-displays li {min-height:232px;}
+.list-displays li:nth-child(2) em {padding-left:90px;}
+/*.list-displays li em {float:right; padding-right:65px;}*/
+#contact_form .fname {float:none; width:100%;}
+	/*slide 2*/
+#learnmoreff {
+    height: 32px;
+    width: 127px;
+	margin-left:200px;
+	margin-top:-50px;
+}
+/* slide 3 */
+#crossroads {
+    margin-left: 214px;
+    margin-top: -170px;
+    z-index: 999;
+}
+#crossroads p {
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    padding-left: 19px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+}
+#signmeup1 {
+    height: 32px;
+    width: 100px;
+	margin-left:372px;
+	margin-top:-45px;
+}
+/*slide 4*/
+#learnmore7 {
+    margin-top:-60px;
+    height: 32px;
+    margin-left: 325px;
+    width: 127px;
+}
+#elite {
+    margin-left: 114px;
+    margin-top: -160px;
+	width:200px;
+    z-index: 999;
+}
+#elite p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 5*/
+#wheretobuy1 {
+    margin-top: 10px;
+    height: 32px;
+    margin-left: 344px;
+    width: 127px;
+}
+#hood_shield {
+    margin-left: 430px;
+    margin-top: 0px;
+    z-index: 999;
+}
+#hood_shield p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+	display:none;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -220px;
+    padding-left: 18px;
+    margin-top: -19px;
+	padding-top:4px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+	
+#ventvisor {
+    margin-left: 335px;
+    margin-top: -140px;
+    z-index: 999;
+}
+#ventvisor p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -210px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+
+#tonneau {
+    margin-top: -137px;
+    margin-left: 100px;
+    z-index: 999;
+}
+#tonneau  p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+	display:none;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 346px;
+    z-index: 555;
+	color:#fff;
+}
+#running_boards {
+    margin-top: 100px;
+    margin-left: 365px;
+    z-index: 999;
+}
+#running_boards p{
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -200px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 200px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 6*/
+#lund_runBoard5 {
+    margin-top: -145px;
+    margin-left: 276px;
+    z-index: 999;
+}
+#lund_runBoard5 p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+#learnmore2 {
+    margin-top: 85px;
+    height: 32px;
+    margin-left: 273px;
+    width: 127px;
+}
+/*slide 7*/
+#learnmore4 {
+    margin-top: 120px;
+    height: 32px;
+    margin-left: 18px;
+    width: 127px;
+}
+#aeroskin {
+    margin-top: -223px;
+    margin-left: 230px;
+    z-index: 999;
+}
+#aeroskin p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+	margin-left:-230px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+}
+.module-g-de {float:none; width:92%;}
+.module-g-de span {float:left; width:100%; border-right:none; padding:0 !important;}
+.module-g-de span.month_info {float:left; width:100%; padding:20px 0 0 0 !important; border-top:1px solid #cccccc; }
+.module-g-de ul{width:100%; float:left; border-top:1px solid #ccc; padding-top:15px; margin-left:0;}
+.col-full {width:90%; margin:0 auto;}
+.coll-buy {float:none;width:90%; margin:0 auto; padding-left:0;}
+.table{display:table; margin:0 auto; width:100%;}
+ul#auto-logos {list-style:none; min-width:400px;padding-top:21px; padding-bottom:20px; text-align:center;}
+ul#auto-logos li { display:inline; padding:25px; text-align:center;}
+.colr-buy{float:none;width:90%; padding-right:0px; margin:0 auto;}
+ul#retailers {list-style:none; width:31%; text-align:left; float:left; padding-right:10px;}
+ul#retailers li {display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-center{list-style:none; width:31%; text-align:left; float:left; padding-right:10px;}
+ul#retailers-center li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-right{list-style:none; width:31%; text-align:left; float:left;}
+ul#retailers-right li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+.alignleft span {display:block; margin-top:23px;}
+.review ol:first-child {margin-top:20px;}
+}
+@media only screen and (max-width:759px){
+.hide-on-mobile {display:none;}
+.brands h4 {clear:both;padding:10px 0 0 0;width:100%;line-height:25px;}
+.brands li{height:65px;}
+.brands li,.brands ul{clear:both;/*padding-bottom:20px;*/width:100% !important;}
+.left{float:none; width:100%;}
+.left article {padding-left:20px;}
+.right {float:none; width:80%;}
+.module-b h1 {font-size:15px;}
+.module-h {margin-left:20px !important; width:86% !important; box-shadow:2px 2px 6px 2px #999;}
+.module-h:last-child{padding-bottom:12px;}
+.profile_info {width:100%; padding-bottom:15px;}
+.portal-table th {font-size:14px; line-height:16px; padding:4px 0;}
+.portal-table td {font-size:13px;}
+.header-inner,.content-inner,.footer-inner,.topnav ul,.select-menu{width:440px;}
+.header-inner {margin-bottom:10px;}
+.bottomnav {display:none;}
+.col-full-login {margin-top:200px;}
+.col-full-portal {margin-top:200px;}
+.coll,.colr,.coll-home,.colr-home,.home .colr{clear:both;width:420px;}
+.coll-home .module-b .module-b-img {width:100%;}
+.colr-products {width:420px; margin-left:10px !important; padding-left:10px;}
+.colr-products .left {width:100%;}
+.colr-products .left p{padding-left:0px;}
+.colr-products .right {width:100%;}
+.module-b .product_overlay{top:30%;left:27%;position:absolute;}
+.product_overlay li {float:none !important; width:200px !important; margin:0 auto !important; border-left:10px solid rgba(0,0,0,.6) !important;border-right:10px solid rgba(0,0,0,.6) !important;border-top:10px solid rgba(0,0,0,.6) !important;border-bottom:10px solid rgba(0,0,0,.6) !important;}
+.closeoverlay {top:0;left:220px;}
+.dc-left{width:95%; float:none; }
+.dc-right{width:95%; float:none; margin-left:115px;}
+#toast_coa {width:90%; height:150px;}
+#toast_coa p {width:70%; margin-top:5px;}
+#toast_coa p a {margin-top:45px; float:right; padding-right:15px;}
+#toast_coa aside {width:25%; padding-left:10px; margin-top:5px;}
+.flex-control-nav,.flex-direction-nav {display:none;}
+section .colr {margin:0 0 0 10px;}
+.header-right{margin:9px 0 0 0;}
+.select-menu{display:block !important;margin:15px auto;padding:10px 10px;outline:none;border:0;border:1px solid #333;background:#777;color:#fff;font-size:18px;font-size:16px;-webkit-appearance: none;}
+#topnav-btn {
+    display: none;
+    background:url(/assets/application/lundinternational/images/toggle.png) 0 0 no-repeat #000;
+    cursor: pointer;
+	width:30px;
+	height:31px;
+	position:absolute; 
+	left:76%;
+	top:-87px;
+}
+.topnav-subarrow {
+    display: none;
+}
+.sfmenu{display:none;}
+.logo{margin:9px 0 14px 0;}
+.social{float:right;/*clear:both;margin-top:5px;*/}
+.list-vehicles li {margin-right:0;}
+header .social {float:right;}
+.col2>li,.col3>li {clear:both;margin:0!important;width:100%;}
+.col2 .module-a {margin-top:15px;}
+.dc_left{width:100%;}
+.dc_right{width:100%;}
+.list-displays li em {float:left; padding-right:15px;}
+	/*slide 2*/
+#learnmoreff {
+    height: 32px;
+    width: 95px;
+	margin-left:200px;
+	margin-top:-35px;
+}
+/* slide 3 */
+#crossroads {
+    margin-left: 214px;
+    margin-top: -170px;
+    z-index: 999;
+}
+#crossroads p {
+    background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    padding-left: 19px;
+    margin-top: -19px;
+    width: 170px;
+    z-index: 555;
+	color:#fff;
+}
+#signmeup1 {
+    height: 32px;
+    width: 95px;
+	margin-left:322px;
+	margin-top:-40px;
+}
+/*slide 4*/
+#learnmore7 {
+    margin-top:-40px;
+    height: 32px;
+    margin-left: 305px;
+    width: 95px;
+}
+#elite {
+    margin-left: 85px;
+    margin-top: -155px;
+	width:200px;
+    z-index: 999;
+}
+#elite p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 5*/
+#wheretobuy1 {
+    margin-top: 15px;
+    height: 32px;
+    margin-left: 294px;
+    width: 95px;
+}
+#hood_shield {
+    margin-left: 370px;
+    margin-top: 0px;
+    z-index: 999;
+}
+#hood_shield p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+	display:none;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -220px;
+    padding-left: 18px;
+    margin-top: -19px;
+	padding-top:4px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+	
+#ventvisor {
+    margin-left: 295px;
+    margin-top: -130px;
+    z-index: 999;
+}
+#ventvisor p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -210px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+
+#tonneau {
+    margin-top: -117px;
+    margin-left: 75px;
+    z-index: 999;
+}
+#tonneau  p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center;
+	display:none;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 206px;
+    z-index: 555;
+	color:#fff;
+}
+#running_boards {
+    margin-top: 80px;
+    margin-left: 315px;
+    z-index: 999;
+}
+#running_boards p{
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -200px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 200px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 6*/
+#lund_runBoard5 {
+    margin-top: -130px;
+    margin-left: 246px;
+    z-index: 999;
+}
+#lund_runBoard5 p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 170px;
+    z-index: 555;
+	color:#fff;
+	line-height:15px;
+}
+#learnmore2 {
+    margin-top: 75px;
+    height: 32px;
+    margin-left: 240px;
+    width: 95px;
+}
+/*slide 7*/
+#learnmore4 {
+    margin-top: 90px;
+    height: 32px;
+    margin-left: 15px;
+    width: 95px;
+}
+#aeroskin {
+    margin-top: -193px;
+    margin-left: 230px;
+    z-index: 999;
+}
+#aeroskin p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+	margin-left:-230px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 310px;
+    z-index: 555;
+	color:#fff;
+	
+}
+/*.contact_left {padding-right:0;}
+.contact_right {margin-left:-20px;}*/
+#contact_form .fname {float:none;}
+/*.contact_left input[type=text], select, textarea {width:300px;}*/
+
+.list-displays li strong {margin-top:-90px; padding-left:70px;}
+.list-displays li em {margin-top:0px; padding-left:70px;}
+.list-displays li:nth-child(2) em {padding-left:70px;}
+.module-g-de {float:none; width:92%;}
+.module-g-de span {float:left; width:100%; border-right:none; padding:0 !important;}
+.module-g-de span.month_info {float:left; width:100%; padding:20px 0 0 0 !important; border-top:1px solid #cccccc; }
+.module-g-de ul{width:100%; float:left; border-top:1px solid #ccc; padding-top:15px; margin-left:0;}
+
+.col-full {width:90%; margin:0 auto;}
+.coll-buy {float:none;width:90%; margin:0 auto; padding-left:0;}
+.table{display:table; margin:0 auto; width:100%;}
+ul#auto-logos {list-style:none; min-width:150px;padding-top:21px; padding-bottom:20px; text-align:center;}
+ul#auto-logos li { display:inline; padding:10px; text-align:center;}
+.colr-buy{float:none;width:90%; padding-right:0px; margin:0 auto;}
+ul#retailers {list-style:none; width:31%; text-align:left; float:left; padding-right:10px;}
+ul#retailers li {display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-center{list-style:none; width:31%; text-align:left; float:left; padding-right:10px;}
+ul#retailers-center li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+ul#retailers-right{list-style:none; width:31%; text-align:left; float:left;}
+ul#retailers-right li{ display:block; padding:2px 2px 5px 2px; text-align:left; font-size:12px;}
+#tab3 .alignright{
+    width:100%;
+}
+.review ol:first-child {margin-top:20px;}
+.details {margin-top:0;}
+.details p {min-height:22px;}
+.details a {margin-left:83px; margin-bottom:10px;}
+.slider_module .colr {width:95.5%;}
+.slider_module .coll .module-a{float:none; width:auto; margin-right:6px; min-height:100px;}
+#topnav-btn {
+        display: block;
+    }
+.topnav-subarrow {
+	display: block;
+   	width: 0; 
+	height: 0; 
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-top: 13px solid #ccc;
+    opacity: .3;
+	background-position: top left!important;
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	cursor: pointer;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+.sfmenu {
+    width: 100%!important;
+    display: none;
+}
+.sfmenu.xactive {
+    display: block!important;
+}
+.sfmenu li {
+    float: none!important;
+    display: block!important;
+    width: 100%!important;
+}
+.sfmenu li a {
+    float: none!important;
+	width:100%;
+	/*max-width:759px;*/
+}
+.sfmenu ul {
+    position:static!important;
+    display: none!important;
+}
+.xpopdrop ul {
+    display: block!important;
+	padding-left:10px;
+	margin-left:0;
+	width:100% !important;
+	max-width:759px;
+}
+.sfmenu li li a{
+	font-size:12px;
+	line-height:26px;
+}
+.sfmenu ul ol {
+	display:block;
+	position:relative;
+}
+.holder {padding-right:20px;}
+.vcard {width:148px;margin-left:15px;}
+
+}
+@media only screen and (max-width:479px){
+.vcard {width:220px;margin-left:0;}
+  .header-inner,.content-inner,.footer-inner,.topnav ul,.select-menu{width:300px;}
+.coll,.colr,.coll-home,.colr-home,.home .colr{width:260px;}
+.coll-home{margin-top:10px;}
+.col-full-portal {width:100%;}
+.left{float:none; width:100%;}
+.left article {padding-left:20px;}
+.right {float:none; width:80%;}
+.module-b-img {width:100%;}
+.module-h {margin-left:20px !important; width:80% !important;}
+.portal-table tr:nth-of-type(2n+1) {background:none;}
+.portal-table, .portal-table tbody {display:block;width:100%;}
+.portal-table thead {display:block;}
+.portal-table thead tr {border-bottom:none;padding-bottom:0; margin-bottom:0;}
+.portal-table thead tr td {color:#fff !important;padding-left:20px;}
+.portal-table th {display:none;}
+.portal-table tr, .portal-table td {display:block;white-space:normal; padding:0; text-align:left;}
+.portal-table tr {border-bottom: 1px solid #eee; margin-bottom: 11px;}
+.portal-table th[data-title]:before, .portal-table td[data-title]:before {
+        content: attr(data-title) ":\00A0";
+        font-weight: bold;
+		margin-left:20px;
+    }
+.portal-table td {
+        border: none;
+        margin-bottom: 6px;
+        color: #444;
+    }
+/*.portal-table td:empty {display:none;}*/
+.portal-table td:first-child {
+        font-size: 14px;
+        /*font-weight: bold;*/
+        margin-bottom: 6px;
+        color: #333;
+    }
+/*.portal-table td:first-child:before { content: attr(data-title) ':'; }*/
+
+.bold_gray {font-size:14px;width:206%;}
+.profile_info {font-size:14px;float:none; width:100%;}
+.colr-products{width:260px;}
+.colr-products .left {width:100%;}
+.colr-products .right {width:100%;}
+.coll-home .module-b .module-b-img {width:100%;}
+.module-b .product_overlay {left:4%;top:25%;}
+#dc_hero_header {background-image:none; height:250px; margin-left:-10px !important; margin-bottom:20px; background: #ffffff; /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMGQwZDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(top,  #ffffff 0%, #d0d0d0 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d0d0d0)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #ffffff 0%,#d0d0d0 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #ffffff 0%,#d0d0d0 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #ffffff 0%,#d0d0d0 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #ffffff 0%,#d0d0d0 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-8 */
+
+}
+.dc_left{width:100%;}
+.dc_right{width:100%;}
+.dc-left{width:90%; float:none;}
+.dc-right{width:90%; float:none; margin-left:100px; margin-bottom:0px;}
+#dc_text_callout {float:none; margin-left:0px;}
+#dc-signup {width:90%;}
+#toast_coa {width:90%; height:275px; padding-right:10px;}
+#toast_coa p {width:100%; float:none; margin-top:10px;}
+#toast_coa p a { margin-top:30px;}
+#toast_coa aside {width:90%; float:none; margin-top:50px; padding-top:5px; border-left:none; border-top:1px solid #333333;}
+	/*slide 2*/
+#learnmoreff {
+    height: 32px;
+    width: 65px;
+	margin-left:120px;
+	margin-top:-25px;
+}
+/* slide 3 */
+#crossroads {
+    margin-left: 114px;
+    margin-top: -125px;
+    z-index: 999;
+}
+#crossroads p {
+    background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    padding-left: 19px;
+    margin-top: -19px;
+    width: 170px;
+    z-index: 555;
+	color:#fff;
+	line-height:15px;
+}
+#signmeup1 {
+    height: 32px;
+    width: 65px;
+	margin-left:198px;
+	margin-top:-25px;
+}
+/*slide 4*/
+#learnmore7 {
+    margin-top:-20px;
+    height: 32px;
+    margin-left: 185px;
+    width: 65px;
+}
+#elite {
+    margin-left: 55px;
+    margin-top: -117px;
+	width:200px;
+    z-index: 999;
+}
+#elite p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 5*/
+#wheretobuy1 {
+    margin-top: 0px;
+    height: 32px;
+    margin-left: 190px;
+    width: 65px;
+}
+#hood_shield {
+    margin-left: 225px;
+    margin-top: -10px;
+    z-index: 999;
+}
+#hood_shield p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -220px;
+    padding-left: 18px;
+    margin-top: -19px;
+	padding-top:4px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+	opacity:1;
+}
+	
+#ventvisor {
+    margin-left: 180px;
+    margin-top: -110px;
+    z-index: 999;
+}
+#ventvisor p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -210px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 216px;
+    z-index: 555;
+	color:#fff;
+}
+
+#tonneau {
+    margin-top: -77px;
+    margin-left: 55px;
+    z-index: 999;
+}
+#tonneau  p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center;
+	display:none;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 206px;
+    z-index: 555;
+	color:#fff;
+}
+#running_boards {
+    margin-top: 50px;
+    margin-left: 195px;
+    z-index: 999;
+}
+#running_boards p{
+    background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+	display:none;
+	font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    margin-left: -200px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 200px;
+    z-index: 555;
+	color:#fff;
+}
+/*slide 6*/
+#lund_runBoard5 {
+    margin-top: -90px;
+    margin-left: 170px;
+    z-index: 999;
+}
+#lund_runBoard5 p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverR_bg.png) no-repeat scroll left center rgba(0, 0, 0, 0);
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+    left: -258px;
+    padding-left: 18px;
+    margin-top: -19px;
+	margin-left:-170px;
+    width: 170px;
+    z-index: 555;
+	color:#fff;
+	line-height:15px;
+}
+#learnmore2 {
+    margin-top: 45px;
+    height: 32px;
+    margin-left: 147px;
+    width: 65px;
+}
+/*slide 7*/
+#learnmore4 {
+    margin-top: 32px;
+    height: 32px;
+    margin-left: 10px;
+    width: 65px;
+}
+#aeroskin {
+    margin-top: -123px;
+    margin-left: 160px;
+    z-index: 999;
+}
+#aeroskin p {
+	background:url(/assets/application/lundinternational/images/slider_rolloverL_bg.png) no-repeat scroll left center;
+    font-family: "eurostile",Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 25px;
+	margin-left:-120px;
+    padding-left: 18px;
+    margin-top: -19px;
+    width: 130px;
+    z-index: 555;
+	color:#fff;
+}
+.module-g-de {float:none; width:92%;}
+.module-g-de span {float:left; width:100%; border-right:none; padding:0 !important;}
+.module-g-de span.month_info {float:left; width:100%; padding:20px 0 0 0 !important; border-top:1px solid #cccccc; }
+.module-g-de ul{width:100%; float:left; border-top:1px solid #ccc; padding-top:15px; margin-left:0;}
+.contact_right {margin-left:-155px; padding-top:0; padding-bottom:30px;}
+.contact_left {margin-top:100px;}
+.contact_left input[type=text], select, textarea {width:250px;}
+
+#contact_form .city {float:none;}
+
+#forms .formcolumn {
+	width:100%;
+	float:none;
+}
+#forms .formcolumn:first-of-type {
+	margin-right:0;
+	margin-bottom:0 !important;
+	padding-bottom:0 !important;
+}
+#forms .formcolumn:nth-of-type(2) {
+	padding-top:0em !important;
+	margin-top:0px !important;
+}
+#forms select{
+	width:98%;
+}
+#forms textarea {
+	width:83%;
+}
+.list-displays li img {background:none !important; border:none !important; float:left; padding-top:10px; padding-left:10px; padding-right:20px; margin-left:0;}
+/*.list-displays li:first-child {background:none !important; border:none !important; float:left;}
+*/.list-displays li {clear:both;float:left;margin-bottom:20px;padding-bottom:20px;position:relative; margin-left:0; width:100% !important; background: #ffffff;} /* Old browsers */
+
+.list-displays li strong {padding-left:20px; margin-top:0;}
+.list-displays li em {padding-left:20px; margin-top:0;}
+.list-displays li:nth-child(2) em {padding-left:20px;}
+.list-displays p {margin-left:20px;}
+.boxes { padding-right:20px !important;}
+
+.col-full {width:90%; margin:0 auto;}
+.coll-buy {float:none;width:90%; margin:0 auto; padding-left:0;}
+.table{display:table; margin:0 auto; width:100%;}
+ul#auto-logos {list-style:none; min-width:200px;padding-top:0px; padding-bottom:0px; text-align:center;}
+ul#auto-logos li { display:inline; padding:10px; text-align:center;}
+.colr-buy{float:none;width:90%; padding-right:0px; margin:0 auto;}
+ul#retailers {list-style:none; width:100%; text-align:center; float:none; padding-right:10px;}
+ul#retailers li {display:inline; padding:0px 6px 0px 6px; text-align:center; font-size:12px; border-right:1px solid #888888;}
+ul#retailers-center{list-style:none; width:100%; text-align:center; float:none; padding-right:10px;}
+ul#retailers-center li{ display:inline; padding:0px 6px 0px 6px; text-align:center; font-size:12px; border-right:1px solid #888888;}
+ul#retailers-right{list-style:none; width:100%; text-align:center; float:none;}
+ul#retailers-right li{ display:inline; padding:0px 6px 0px 6px; text-align:center; font-size:12px; border-right:1px solid #888888;}
+.module-b h1 {font-size:15px;}
+.alignleft span {display:block; margin-top:23px;}
+.review ol:first-child {margin-top:20px;}
+.parts li {text-align:left;}
+.parts li img{margin-bottom:12px;}
+.details p {padding-left:0; min-height:auto;}
+.details a {margin-left:0;}	
+.slider_module .colr {display:none;}
+header .social {margin-right:25px;margin-top:5px;}
+.sfmenu .navcols {
+	width:100%;
+}
+#topnav-btn {
+	top:-103px;
+	left:71%;
+}
+.xpopdrop ul {
+	padding-left:10px;
+	margin-left:0;
+	width:100% !important;
+	max-width:479px;
+}
+
+.onefourth .alignright {float:none;}
+.threefourth .alignright {float:none;}
+/*Storage boxes*/
+.storage .list-styles > li ul li:nth-child(odd) {float:none;width:100% !important;}
+.storage .list-styles > li ul li:nth-child(even) {float:none; width:100% !important;}
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:999999999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}h
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(/assets/application/lundinternational/images/colorbox/overlay.png) repeat 0 0;}
+#colorbox{}
+    #cboxTopLeft{width:21px; height:21px; background:url(/assets/application/lundinternational/images/colorbox/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(/assets/application/lundinternational/images/colorbox/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(/assets/application/lundinternational/images/colorbox/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(/assets/application/lundinternational/images/colorbox/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(/assets/application/lundinternational/images/colorbox/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(/assets/application/lundinternational/images/colorbox/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(/assets/application/lundinternational/images/colorbox/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(/assets/application/lundinternational/images/colorbox/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        /*#cboxTitle{position: absolute;bottom: 4px;left: 0;text-align: left;width: 100%;color: #888;font-weight: 300;font-size: 12px;}*/
+        #cboxTitle{/*position:absolute;bottom:4px;color:#888;font-size:11px;line-height:11px;margin:0 30px 0 60px;text-align:left;*/position:absolute; color:#888;margin:0;left:0;right: 0;bottom:3px;padding:5px;text-align:left; width:100%; padding: 5px; font-size: .9em; /*margin-left: -5px;*/background: none repeat scroll 0 0 rgba(255,255,255, 0.75);margin-bottom: 23px;}
+        #cboxCurrent{display:none}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(/assets/application/lundinternational/images/colorbox/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(/assets/application/lundinternational/images/colorbox/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(/assets/application/lundinternational/images/colorbox/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(/assets/application/lundinternational/images/colorbox/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(/assets/application/lundinternational/images/colorbox/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+  Feel free to remove this and the /ie6/ directory if you have dropped IE6 support.
+*/
+.cboxIE6 #cboxTopLeft{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderTopLeft.png);}
+.cboxIE6 #cboxTopCenter{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderTopCenter.png);}
+.cboxIE6 #cboxTopRight{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderTopRight.png);}
+.cboxIE6 #cboxBottomLeft{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderBottomLeft.png);}
+.cboxIE6 #cboxBottomCenter{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderBottomCenter.png);}
+.cboxIE6 #cboxBottomRight{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderBottomRight.png);}
+.cboxIE6 #cboxMiddleLeft{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderMiddleLeft.png);}
+.cboxIE6 #cboxMiddleRight{background:url(/assets/application/lundinternational/images/colorbox/ie6/borderMiddleRight.png);}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+    _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
+}
