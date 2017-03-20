@@ -224,7 +224,7 @@ div.block-layered-nav dd a.amshopby-attr-selected:after{ content: "X"; font-weig
 
 .top-section{ display:block !important;}
 .navbar-default .navbar-nav > li.hidefor-desktop{ display:none;}
-.our-product-navi .product-navigation{ position:relative; overflow:hidden; width:100%; top:-1px; display:block;}
+.our-product-navi .product-navigation{ position:relative; overflow:hidden; width:100%; top:-4px; display:block;}
 .our-product-navi { display:none;}
 
 }
