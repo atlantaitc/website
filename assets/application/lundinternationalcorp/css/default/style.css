@@ -9084,6 +9084,11 @@ ol, ul {
     -o-transition:0.8s all ease;
     transition:0.8s all ease;
     display: none;
+/*    -webkit-transform:scale(0);
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
+    transform:scale(0);*/
 }
 .brand-our-main .hid-show p{
     color:#000;}
@@ -9092,7 +9097,7 @@ ol, ul {
     padding-top:40px;}
 .brand-our-main p{
     padding:20px 0;}
-.hover-img01:hover .hid-show{
+.brand-logo-main li:hover .hid-show{
     -webkit-transform:scale(1);
     -moz-transform:scale(1);
     -ms-transform:scale(1);
@@ -9101,7 +9106,7 @@ ol, ul {
     display: block;
 }
 .brand-our-main{
-    height:auto !important;}
+    height:auto !important;
 }
 
 /*=== STYLE FOR DEALER LOCATOR POPUP ===*/
