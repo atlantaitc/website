@@ -994,82 +994,6 @@
                                             </address>
                                         </div>
                                     </div>
-                                    <script type="text/javascript">
-                                        var index = locationsmap_markers.length;
-                                        var newMarker = new google.maps.Marker({map: locationsmap_map, icon: {url: "/assets/application/lundinternationalcorp/images/blue-marker.png"}, position: new google.maps.LatLng(34.119932, -84.037889)});
-                                        var isDuplicate = false;
-
-                                        if (typeof locationsmap_positions == "undefined") {
-                                            locationsmap_positions = [];
-                                        }
-
-                                        if (locationsmap_markers.length > 0) {
-                                            for (var i = 0; i < locationsmap_markers.length; i++) {
-
-                                                var marker = locationsmap_markers[i];
-
-                                                var a = newMarker.getPosition();
-                                                var b = marker.getPosition();
-
-                                                if (a.lat() == b.lat() && a.lng() == b.lng()) {
-                                                    newMarker.setMap(null);
-                                                }
-                                            }
-                                            ;
-                                        }
-
-                                        locationsmap_positions.push(newMarker.getPosition());
-                                        locationsmap_markers[index] = newMarker;
-                                        locationsmap_oms ? locationsmap_oms.addMarker(locationsmap_markers[index]) : false;
-                                        locationsmap_markers[index].index = 0;
-                                        locationsmap_bounds.extend(new google.maps.LatLng(34.119932, -84.037889));
-                                        locationsmap_map.fitBounds(locationsmap_bounds);
-                                        (function () {
-                                            var infowindow = new google.maps.InfoWindow({content: '<div class="ui-infowindow-content"><h3>Lund International</h3><address>Buford, GA 30518<br />Phone: 1-800-241-7219 </address></div>'});
-                                            var obj = locationsmap_markers[index];
-
-                                            locationsmap_windows.push(infowindow);
-
-                                            var callback = function (obj, e) {
-                                                var currentPos = e.latLng;
-
-                                                for (var i = 0; i < locationsmap_windows.length; i++) {
-                                                    locationsmap_windows[i].close();
-                                                }
-                                                obj.window.setPosition(currentPos);
-
-                                                if (obj.strokeColor) {
-                                                    obj.window.open(locationsmap_map);
-                                                } else {
-                                                    obj.window.open(locationsmap_map, obj);
-                                                }
-                                            };
-
-                                            obj.window = infowindow;
-
-                                            if (!locationsmap_oms) {
-                                                google.maps.event.addListener(obj, "click", function (e) {
-                                                    callback(obj, e);
-                                                });
-                                            } else if (!locationsmap_oms.clickEventAdded) {
-                                                locationsmap_oms.addListener("click", function (marker, e) {
-                                                    callback(marker, e);
-                                                });
-
-                                                locationsmap_oms.addListener("spiderfy", function (markers) {
-                                                    for (var x in locationsmap_windows) {
-                                                        var window = locationsmap_windows[x];
-
-                                                        window.close();
-                                                    }
-                                                });
-
-                                                locationsmap_oms.clickEventAdded = true;
-                                            }
-
-                                            locationsmap_window = infowindow;
-                                        })();
-                                    </script>
                                     <a href="#accordion-2" class="title"><b class="count">2</b>Lund International <span class="arrow">&nbsp;</span></a>
                                     <div class="location clearfix" id="accordion-2">
                                         <div class="addy">
@@ -1082,82 +1006,6 @@
                                             </address>
                                         </div>
                                     </div>
-                                    <script type="text/javascript">
-                                        var index = locationsmap_markers.length;
-                                        var newMarker = new google.maps.Marker({map: locationsmap_map, icon: {url: "/assets/application/lundinternationalcorp/images/blue-marker.png"}, position: new google.maps.LatLng(34.119932, -84.037889)});
-                                        var isDuplicate = false;
-
-                                        if (typeof locationsmap_positions == "undefined") {
-                                            locationsmap_positions = [];
-                                        }
-
-                                        if (locationsmap_markers.length > 0) {
-                                            for (var i = 0; i < locationsmap_markers.length; i++) {
-
-                                                var marker = locationsmap_markers[i];
-
-                                                var a = newMarker.getPosition();
-                                                var b = marker.getPosition();
-
-                                                if (a.lat() == b.lat() && a.lng() == b.lng()) {
-                                                    newMarker.setMap(null);
-                                                }
-                                            }
-                                            ;
-                                        }
-
-                                        locationsmap_positions.push(newMarker.getPosition());
-                                        locationsmap_markers[index] = newMarker;
-                                        locationsmap_oms ? locationsmap_oms.addMarker(locationsmap_markers[index]) : false;
-                                        locationsmap_markers[index].index = 0;
-                                        locationsmap_bounds.extend(new google.maps.LatLng(34.119932, -84.037889));
-                                        locationsmap_map.fitBounds(locationsmap_bounds);
-                                        (function () {
-                                            var infowindow = new google.maps.InfoWindow({content: '<div class="ui-infowindow-content"><h3>Lund International</h3><address>Lawrenceville, GA 30518<br />Phone: 1-800-241-7219 </address></div>'});
-                                            var obj = locationsmap_markers[index];
-
-                                            locationsmap_windows.push(infowindow);
-
-                                            var callback = function (obj, e) {
-                                                var currentPos = e.latLng;
-
-                                                for (var i = 0; i < locationsmap_windows.length; i++) {
-                                                    locationsmap_windows[i].close();
-                                                }
-                                                obj.window.setPosition(currentPos);
-
-                                                if (obj.strokeColor) {
-                                                    obj.window.open(locationsmap_map);
-                                                } else {
-                                                    obj.window.open(locationsmap_map, obj);
-                                                }
-                                            };
-
-                                            obj.window = infowindow;
-
-                                            if (!locationsmap_oms) {
-                                                google.maps.event.addListener(obj, "click", function (e) {
-                                                    callback(obj, e);
-                                                });
-                                            } else if (!locationsmap_oms.clickEventAdded) {
-                                                locationsmap_oms.addListener("click", function (marker, e) {
-                                                    callback(marker, e);
-                                                });
-
-                                                locationsmap_oms.addListener("spiderfy", function (markers) {
-                                                    for (var x in locationsmap_windows) {
-                                                        var window = locationsmap_windows[x];
-
-                                                        window.close();
-                                                    }
-                                                });
-
-                                                locationsmap_oms.clickEventAdded = true;
-                                            }
-
-                                            locationsmap_window = infowindow;
-                                        })();
-                                    </script>
                                     <a href="#accordion-3" class="title"><b class="count">3</b>Lund International <span class="arrow">&nbsp;</span></a>
                                     <div class="location clearfix" id="accordion-3">
                                         <div class="addy">
@@ -1170,82 +1018,6 @@
                                             </address>
                                         </div>
                                     </div>
-                                    <script type="text/javascript">
-                                        var index = locationsmap_markers.length;
-                                        var newMarker = new google.maps.Marker({map: locationsmap_map, icon: {url: "/assets/application/lundinternationalcorp/images/blue-marker.png"}, position: new google.maps.LatLng(31.956534, -99.962313)});
-                                        var isDuplicate = false;
-
-                                        if (typeof locationsmap_positions == "undefined") {
-                                            locationsmap_positions = [];
-                                        }
-
-                                        if (locationsmap_markers.length > 0) {
-                                            for (var i = 0; i < locationsmap_markers.length; i++) {
-
-                                                var marker = locationsmap_markers[i];
-
-                                                var a = newMarker.getPosition();
-                                                var b = marker.getPosition();
-
-                                                if (a.lat() == b.lat() && a.lng() == b.lng()) {
-                                                    newMarker.setMap(null);
-                                                }
-                                            }
-                                            ;
-                                        }
-
-                                        locationsmap_positions.push(newMarker.getPosition());
-                                        locationsmap_markers[index] = newMarker;
-                                        locationsmap_oms ? locationsmap_oms.addMarker(locationsmap_markers[index]) : false;
-                                        locationsmap_markers[index].index = 0;
-                                        locationsmap_bounds.extend(new google.maps.LatLng(31.956534, -99.962313));
-                                        locationsmap_map.fitBounds(locationsmap_bounds);
-                                        (function () {
-                                            var infowindow = new google.maps.InfoWindow({content: '<div class="ui-infowindow-content"><h3>Lund International</h3><address>Winters Texas<br />Phone: 1-800-241-7219 </address></div>'});
-                                            var obj = locationsmap_markers[index];
-
-                                            locationsmap_windows.push(infowindow);
-
-                                            var callback = function (obj, e) {
-                                                var currentPos = e.latLng;
-
-                                                for (var i = 0; i < locationsmap_windows.length; i++) {
-                                                    locationsmap_windows[i].close();
-                                                }
-                                                obj.window.setPosition(currentPos);
-
-                                                if (obj.strokeColor) {
-                                                    obj.window.open(locationsmap_map);
-                                                } else {
-                                                    obj.window.open(locationsmap_map, obj);
-                                                }
-                                            };
-
-                                            obj.window = infowindow;
-
-                                            if (!locationsmap_oms) {
-                                                google.maps.event.addListener(obj, "click", function (e) {
-                                                    callback(obj, e);
-                                                });
-                                            } else if (!locationsmap_oms.clickEventAdded) {
-                                                locationsmap_oms.addListener("click", function (marker, e) {
-                                                    callback(marker, e);
-                                                });
-
-                                                locationsmap_oms.addListener("spiderfy", function (markers) {
-                                                    for (var x in locationsmap_windows) {
-                                                        var window = locationsmap_windows[x];
-
-                                                        window.close();
-                                                    }
-                                                });
-
-                                                locationsmap_oms.clickEventAdded = true;
-                                            }
-
-                                            locationsmap_window = infowindow;
-                                        })();
-                                    </script>
                                     <a href="#accordion-4" class="title"><b class="count">4</b>Lund International <span class="arrow">&nbsp;</span></a>
                                     <div class="location clearfix" id="accordion-4">
                                         <div class="addy">
@@ -1258,86 +1030,6 @@
                                             </address>
                                         </div>
                                     </div>
-                                    <script type="text/javascript">
-                                        var index = locationsmap_markers.length;
-                                        var newMarker = new google.maps.Marker({map: locationsmap_map, icon: {url: "/assets/application/lundinternationalcorp/images/blue-marker.png"}, position: new google.maps.LatLng(41.721652, -85.421099)});
-                                        var isDuplicate = false;
-
-                                        if (typeof locationsmap_positions == "undefined") {
-                                            locationsmap_positions = [];
-                                        }
-
-                                        if (locationsmap_markers.length > 0) {
-                                            for (var i = 0; i < locationsmap_markers.length; i++) {
-
-                                                var marker = locationsmap_markers[i];
-
-                                                var a = newMarker.getPosition();
-                                                var b = marker.getPosition();
-
-                                                if (a.lat() == b.lat() && a.lng() == b.lng()) {
-                                                    newMarker.setMap(null);
-                                                }
-                                            }
-                                            ;
-                                        }
-
-                                        locationsmap_positions.push(newMarker.getPosition());
-                                        locationsmap_markers[index] = newMarker;
-                                        locationsmap_oms ? locationsmap_oms.addMarker(locationsmap_markers[index]) : false;
-                                        locationsmap_markers[index].index = 0;
-                                        locationsmap_bounds.extend(new google.maps.LatLng(41.721652, -85.421099));
-                                        locationsmap_map.fitBounds(locationsmap_bounds);
-                                        (function () {
-                                            var infowindow = new google.maps.InfoWindow({content: '<div class="ui-infowindow-content"><h3>Lund International</h3><address>Howe Indiana<br />Phone: 1-800-241-7219 </address></div>'});
-                                            var obj = locationsmap_markers[index];
-
-                                            locationsmap_windows.push(infowindow);
-
-                                            var callback = function (obj, e) {
-                                                var currentPos = e.latLng;
-
-                                                for (var i = 0; i < locationsmap_windows.length; i++) {
-                                                    locationsmap_windows[i].close();
-                                                }
-                                                obj.window.setPosition(currentPos);
-
-                                                if (obj.strokeColor) {
-                                                    obj.window.open(locationsmap_map);
-                                                } else {
-                                                    obj.window.open(locationsmap_map, obj);
-                                                }
-                                            };
-
-                                            obj.window = infowindow;
-
-                                            if (!locationsmap_oms) {
-                                                google.maps.event.addListener(obj, "click", function (e) {
-                                                    callback(obj, e);
-                                                });
-                                            } else if (!locationsmap_oms.clickEventAdded) {
-                                                locationsmap_oms.addListener("click", function (marker, e) {
-                                                    callback(marker, e);
-                                                });
-
-                                                locationsmap_oms.addListener("spiderfy", function (markers) {
-                                                    for (var x in locationsmap_windows) {
-                                                        var window = locationsmap_windows[x];
-
-                                                        window.close();
-                                                    }
-                                                });
-
-                                                locationsmap_oms.clickEventAdded = true;
-                                            }
-
-                                            locationsmap_window = infowindow;
-                                        })();
-                                    </script>
-
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -1391,9 +1083,10 @@
     function initMap() {
 
         var locations = [
-            ['Texas', 31.9685988, -99.9018131, 4],
-            ['Atlanta', 33.749249, -84.387314, 5],
-            ['chicago', 41.881832, -85.623177, 3]
+            ['<div class="ui-infowindow-content"><h3>Lund International</h3><address>Buford, GA 30518<br />Phone: 1-800-241-7219 </address></div>', 34.119932, -84.037889, 1],
+            ['<div class="ui-infowindow-content"><h3>Lund International</h3><address>Lawrenceville, GA 30518<br />Phone: 1-800-241-7219 </address></div>', 33.749249, -84.387314, 2],
+            ['<div class="ui-infowindow-content"><h3>Lund International</h3><address>Winters Texas<br />Phone: 1-800-241-7219 </address></div>', 31.9685988, -99.9018131, 3],
+            ['<div class="ui-infowindow-content"><h3>Lund International</h3><address>Howe Indiana<br />Phone: 1-800-241-7219 </address></div>', 41.881832, -85.623177, 4]
         ];
 
         var map = new google.maps.Map(document.getElementById('map'), {
