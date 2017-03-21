@@ -7,7 +7,7 @@
 .top-min-banner .border:after{ content:""; height:3px;  background:""; left:0; top:23px; right:0; position:absolute;}
 .main-vehicle-section{margin:0; padding:17px 0px 11px 12px; background:url(../images/avs-form-bg.png) center top no-repeat; height:auto; width:100%;}
 .navbar-default .navbar-nav > li {padding: 9px 8px 45px 10px;}
-.navbar-nav > li.about-links > ul {top: 100px !important;}
+.navbar-nav > li.about-links > ul {top: 82px !important;}
 #locator.accordion-new .results a.title.active {background: url(../images/avs-form-bg.png) center top no-repeat;}
 #locator.accordion-new .results a.title {background: url(../images/avs-form-bg.png) center top no-repeat;}
 .bx-wrapper .bx-viewport { max-height: 550px;}
