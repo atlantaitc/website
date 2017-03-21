@@ -10,6 +10,8 @@
 .navbar-nav > li.about-links > ul {top: 100px !important;}
 #locator.accordion-new .results a.title.active {background: url(../images/avs-form-bg.png) center top no-repeat;}
 #locator.accordion-new .results a.title {background: url(../images/avs-form-bg.png) center top no-repeat;}
+.bx-wrapper .bx-viewport { max-height: 530px !important;}
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
 .top-min-banner h2{ font-size:40px; padding:0 7px; line-height:40px;}
