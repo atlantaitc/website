@@ -1,5 +1,5 @@
-.header-bg-section { background: #2673a1 url("../images/avs-header-bg.png") repeat-x scroll left top; height: auto;}
-.header-bg-section .container{ background:url(../images/avs-logo-bg-top.png) left top no-repeat; height:auto;}
+.header-bg-section { background: #2673a1 url("../images/avs-header-bg.png") repeat-x scroll left top; height: 100px;}
+.header-bg-section .container{ background:url(../images/avs-logo-bg-top.png) left top no-repeat; height:100px;}
 .top-min-banner{ height:49px; background:url(../images/avs-yellow-bg.png) center top no-repeat;  text-align:center; }
 .top-min-banner span{ color:#000;}
 .top-min-banner h3{ font-size:43px; color:#f2112c; text-transform:uppercase; font-weight:900; margin:0; line-height:49px; display:inline-block;  position:relative; z-index:99; padding:0 30px;  font-style:normal; font-stretch:expanded; text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;}
@@ -10,8 +10,8 @@
 .navbar-nav > li.about-links > ul {top: 100px !important;}
 #locator.accordion-new .results a.title.active {background: url(../images/avs-form-bg.png) center top no-repeat;}
 #locator.accordion-new .results a.title {background: url(../images/avs-form-bg.png) center top no-repeat;}
-.bx-wrapper .bx-viewport { max-height: 530px !important;}
-
+.bx-wrapper .bx-viewport { max-height: 550px;}
+.header-right{height: 100px;}
 
 @media (min-width: 992px) and (max-width: 1199px) {
 .top-min-banner h2{ font-size:40px; padding:0 7px; line-height:40px;}

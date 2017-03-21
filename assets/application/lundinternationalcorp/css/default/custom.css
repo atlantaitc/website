@@ -9,7 +9,7 @@ body{ font-family: 'Roboto', sans-serif;}
 .top-section .top-brand ul li span.lund-amp-logo{ display:none;}
 
 .product-page .breadcrumb{margin: 13px !important;}
-.header-bg-section{ height:100px; background:rgba(19,19,19,0.85);}
+.header-bg-section{ height:97px; background:rgba(19,19,19,0.85);}
 .top-min-banner{ height:49px; background:#822711; text-align:center; line-height:49px; font-size:43px; color:#fcfbfb; text-transform:uppercase; font-style:italic; font-weight:700;}
 .top-min-banner span{ color:#79b5f0;}
 .top-min-banner h2{ font-size:43px; color:#fcfbfb; text-transform:uppercase; font-style:italic; font-weight:700; margin:0; line-height:49px; display:inline-block; background:#822711; position:relative; z-index:99; padding:0 30px;}
