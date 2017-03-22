@@ -9261,7 +9261,8 @@ ol, ul {
 }
 
 .options{ padding-top:20px;}
-.zips{ float: left; width: 50%; }
-.radius{ float: left; width: 50%; }
+.zips{ float: left; width: 40%; }
+.radius{ float: left; width: 37%; }
 .submitMapOptions{ float: left; width: 100%; }
-.submitMapButton{ float: left; padding-left: 44%; padding-top: 20px; }
+.submitMapButton{ float: left; }
+.submitMapButton button{ width: 150px }
