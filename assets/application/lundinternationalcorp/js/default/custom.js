@@ -384,40 +384,7 @@ jQuery(document).ready(function() {
 });
 
 
-/* ONLINE RETAILERS SEARCH */
-jQuery(function(){
 
-	jQuery("#online-search select.select-country").change(function(e){
-		jQuery("#online-search").ajaxSubmit({
-			target: ".retailers"
-		});
-		jQuery("#locator #online-search select.select-brand").removeAttr("disabled");
-		jQuery("#locator .retailers").hide();
-	});
-	
-	jQuery("#online-search select.select-brand").change(function(e){
-		jQuery("#online-search").ajaxSubmit({
-			target: ".retailers"
-		});
-		jQuery("#locator #online-search select.select-categories").removeAttr("disabled");
-		jQuery("#locator .retailers").hide();
-	});
-	
-	jQuery("#online-search select.select-categories").change(function(e){
-		jQuery("#online-search").ajaxSubmit({
-			target: ".retailers"
-		});
-		jQuery("#locator .retailers").show();
-		jQuery("#locator .retailers2").hide();
-	});
-	
-	
-	
-	jQuery("#locator-search input[type='checkbox']").change(function(){
-		jQuery(this).parents('form').submit();
-	});
-
-});
 
 jQuery(document).ready(function($) {
 	setTimeout(function(){
