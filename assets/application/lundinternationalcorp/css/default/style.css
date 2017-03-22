@@ -9253,3 +9253,15 @@ ol, ul {
         width: 300px !important;
     }
 }
+
+@media (max-width:560px){   
+    .three-img {
+        width: 100%;
+    }
+}
+
+.options{ padding-top:20px;}
+.zips{ float: left; width: 50%; }
+.radius{ float: left; width: 50%; }
+.submitMapOptions{ float: left; width: 100%; }
+.submitMapButton{ float: left; padding-left: 44%; padding-top: 20px; }

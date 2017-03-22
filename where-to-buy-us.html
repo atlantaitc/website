@@ -32,7 +32,53 @@
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/colorbox.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/jquery.rateyo.css" media="all" />
 		
-				<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/prototype/prototype.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>      
+		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.colorbox.js"></script>
+        <script>
+            $(document).ready(function () {
+                //Examples of how to assign the Colorbox event to elements
+                $(".group1").colorbox({rel: 'group1'});
+                $(".group2").colorbox({rel: 'group2', transition: "fade"});
+                $(".group3").colorbox({rel: 'group3', transition: "none", width: "75%", height: "75%"});
+                $(".group4").colorbox({rel: 'group4', slideshow: true});
+                $(".ajax").colorbox();
+                $(".youtube").colorbox({iframe: true, innerWidth: 640, innerHeight: 390});
+                $(".vimeo").colorbox({iframe: true, innerWidth: 500, innerHeight: 409});
+                $(".iframe").colorbox({iframe: true, width: "80%", height: "80%"});
+                $(".inline").colorbox({inline: true, width: "50%"});
+                $(".callbacks").colorbox({
+                    onOpen: function () {
+                        alert('onOpen: colorbox is about to open');
+                    },
+                    onLoad: function () {
+                        alert('onLoad: colorbox has started to load the targeted content');
+                    },
+                    onComplete: function () {
+                        alert('onComplete: colorbox has displayed the loaded content');
+                    },
+                    onCleanup: function () {
+                        alert('onCleanup: colorbox has begun the close process');
+                    },
+                    onClosed: function () {
+                        alert('onClosed: colorbox has completely closed');
+                    }
+                });
+
+                $('.non-retina').colorbox({rel: 'group5', transition: 'none'})
+                $('.retina').colorbox({rel: 'group5', transition: 'none', retinaImage: true, retinaUrl: true});
+
+                //Example of preserving a JavaScript event for inline calls.
+                $("#click").click(function () {
+                    $('#click').css({"background-color": "#f00", "color": "#fff", "cursor": "inherit"}).text("Open this window again and this message will still be here.");
+                    return false;
+                });
+            });
+        </script>
+		
+		<script src="/assets/application/lundinternationalcorp/js/default/jquery-1.12.4.js"></script>
+		<script src="/assets/application/lundinternationalcorp/js/default/jquery-ui.js"></script>
+		
+		
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/prototype/validation.js"></script>			
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/scriptaculous/builder.js"></script>
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/scriptaculous/effects.js"></script>
@@ -864,10 +910,6 @@
 		</div>  
 
             
-
-
-<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.colorbox.js"></script>
-
 <div class="container">
 
     <div class="layout layout-1-cols">
@@ -883,16 +925,13 @@
 
                     <div id="tabs">
                       <ul>
-                          <li class="liele"><a href="#tabs-01">Local Retailers</a></li>
+                        <li class="liele"><a href="#tabs-01">Local Retailers</a></li>
                         <li class="liele"><a href="#tabs-02">Online Retailers</a></li>
                         <li class="liele"><a href="#tabs-03">Local Installers</a></li>
                       </ul>
                       <div id="tabs-01">
                           <div class="hide-show" id="showMap">
-                          <fieldset>
-	                        <input type="search" name="location" id="location" value="" placeholder="Address or Zipcode"/>
-	                        <button type="submit">Go</button>
-	                    </fieldset>
+                          
                     	<div class="filter clearfix">
                             <h2>Filter by Brand</h2>
                             <ul>
@@ -915,12 +954,33 @@
                                 
                             </ul>
                         </div>
+                        <fieldset class="options">
+                        	<div class="submitMapOptions">
+	                        	<div class="zips">
+		                        	<input type="search" name="location" id="location" value="" placeholder="Address or Zipcode"/>
+		                        </div>
+		                        <div class="radius">
+		                        	<select name="radius" id="radius" required=required>
+		                        		<option value="">Select your radius</option>
+		                        		<option value="5">5 Miles</option>
+		                        		<option value="10">10 Miles</option>
+		                        		<option value="20">20 Miles</option>
+		                        		<option value="50">50 Miles</option>
+		                        		<option value="100">100 Miles</option>
+		                        	</select>
+		                        </div>
+	                        </div>
+	                        <div class="submitMapButton">
+	                        	<button type="submit">Go</button>
+	                        </div>
+	                    </fieldset>
                     	
                         <div id="map">
                         <script src="/assets/application/lundinternationalcorp/js/default/map.js"></script>
 						<link rel="stylesheet" href="/assets/application/lundinternationalcorp/js/third-party/gmap/css/infobox.css" media="screen, projection">
-					
+					    <!--  
 						<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.27&amp;key=AIzaSyAi8_RYGduEnXRlUgyksd6HwhEDynSdARM&amp;language=en"></script>
+						-->
 						<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/third-party/gmap/javascript/infobox.js"></script>
 						<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/third-party/gmap/javascript/markerclusterer.js"></script>
 						<div id="locationsmap" class="" style="width:100%;height:100%"></div>
@@ -1011,8 +1071,7 @@
     </div>
 
 </div>
-<script src="/assets/application/lundinternationalcorp/js/default/jquery-1.12.4.js"></script>
-<script src="/assets/application/lundinternationalcorp/js/default/jquery-ui.js"></script>
+
 <script>
 	$(function () {
     	$("#tabs").tabs();
@@ -1020,9 +1079,16 @@
 	});
     	$(".liele").click(function () {
         	$("#showMap").removeClass("hide-show");
+            $(this).addClass("ui-tabs-active");
          	initMap();
     	});
 
+    	</script>
+    	<script async defer
+    	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi8_RYGduEnXRlUgyksd6HwhEDynSdARM&callback=initMap">
+    	</script>
+    	<script type="text/javascript">    	
+    	
     function initMap() {
 
         var locations = [
