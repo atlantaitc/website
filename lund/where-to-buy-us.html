@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title></title>
+		<title>Lund International | AVS | LUND</title>
 		<meta name="keywords" content="" />
         <meta name="description" content="" />
         <meta name="robots" content="INDEX,FOLLOW" />
@@ -34,8 +34,8 @@
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/aw_pq2/css/custom.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/aw_vidtest/css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/jquery.rateyo.css" media="all" />  
-		
-		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/brands/css/avs.css" media="all" />		
+		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/brands/css/lund.css" media="all" />		
+
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>      
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.colorbox.js"></script>
@@ -81,8 +81,9 @@
         </script>
 		
 		<script src="/assets/application/lundinternationalcorp/js/default/jquery-1.12.4.js"></script>
-				
-		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/prototype/prototype.js"></script>
+		<script src="/assets/application/lundinternationalcorp/js/default/jquery-ui.js"></script>
+		
+		
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/prototype/validation.js"></script>			
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/scriptaculous/builder.js"></script>
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/scriptaculous/effects.js"></script>
@@ -98,17 +99,15 @@
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.colorbox.js"></script>
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/ulvehicle.js"></script>		 
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/brands/custom.js"></script>
-		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/brands/owl.carousel.js"></script>		
-		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.rateyo.js"></script>
+		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/brands/owl.carousel.js"></script>	
+		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.rateyo.js"></script>	
 		
 		<!-- 
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/custom.js"></script>
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/owl.carousel.js"></script>
-		-->
-		
-						
+		-->				
 				
-        <link rel="canonical" href="http://www.lundinternational.com/avs/where-to-buy" />        
+        <link rel="canonical" href="http://www.lundinternational.com/where-to-buy" />        
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" />
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,300,100,700,900" />
 		<script type="text/javascript">
@@ -128,13 +127,13 @@
   			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		
-	</head><body id="locator">		<div class="header-bg-section clearfix">
+</head><body id="locator">		<div class="header-bg-section clearfix">
     		<div class="container">
     			<div class="tablet-menu">
         			<a href="javascript:void(0)" onclick="jQuery('.navbar.navbar-default').toggle();">Menu</a>
         		</div>
         		<div class="logo-section">
-            		<a href="/avs/index.html" title="AVS Ahead of the Curve" class="logo"><strong>AVS Ahead of the Curve</strong><img src="/assets/application/lundinternationalcorp/images/avs-logo.png" alt="AVS Ahead of the Curve" /></a>
+            		<a href="/lund/index.html" title="Lund Premium Style. Lasting Performance." class="logo"><strong>Lund Premium Style. Lasting Performance.</strong><img src="/assets/application/lundinternationalcorp/images/lund-logo.png" alt="Lund Premium Style. Lasting Performance." /></a>
   				</div>
         		<div class="header-right">
             		<div class="header-right-top clearfix">               
@@ -165,7 +164,7 @@
 
 								<script type="text/javascript">
 								
-							    jQuery(document).ready(function () {
+								jQuery(document).ready(function () {
 									
 							        jQuery('#installation-year').on('change', function () {
 
@@ -173,7 +172,7 @@
 							
 							            jQuery('#installation-make').attr('disabled', "");
 							            jQuery('#installation-model').attr('disabled', "");
-								        var data = {module : 'getMake', brand : '1', category : '', vehYear : yearForMake}
+								        var data = {module : 'getMake', brand : '3', category : '', vehYear : yearForMake}
 
 								        jQuery.ajax({
 									        url: "/products/ajax-stampede",
@@ -202,7 +201,7 @@
 
 							            jQuery('#installation-model').attr('disabled', "");
 							            
-							            var data = {module : 'getModelSubmodel', brand : '1', vehYear : yearForModel, category : '', vehMake : makeForModel}
+							            var data = {module : 'getModelSubmodel', brand : '3', vehYear : yearForModel, category : '', vehMake : makeForModel}
 
 							            jQuery.ajax({
 									        url: "/products/ajax-stampede",
@@ -230,7 +229,7 @@
 							            var make  = jQuery('#installation-make').val();
 							            var model = jQuery('#installation-model').val();
 
-							            var data = {brand : '1', vehYear : year, vehMake : make, vehModel : model}
+							            var data = {brand : '3', vehYear : year, vehMake : make, vehModel : model}
 							            
 							            jQuery.ajax({
 									        url: "/products/installations",
@@ -250,7 +249,7 @@
 							        jQuery('#go-search').on('click', function () {
 							            var part  = jQuery('#part').val();
 
-							            var data = {brand : '1', part : part}
+							            var data = {brand : '3', part : part}
 							            
 							            jQuery.ajax({
 									        url: "/products/installations-part",
@@ -266,6 +265,9 @@
 									    	}
 									    }); 
 							        });
+
+
+								    
 	
 							        jQuery('.vehicle-year-select').on('change', function () {
 								     
@@ -443,107 +445,178 @@
 					        	<div class="tablet-menu-hide">
 					            	<a href="javascript:void(0)"><span>Menu</span></a>
 					            </div>
-					            <ul class="nav navbar-nav">
+					            <ul class="nav navbar-nav">   	
 					            	<li class="level0 nav-1 level-top parent our-products-menu hidefor-desktop">
-						            	<a class="level-top" href="javascript:void(0)" title="Our Products"><span>Our Products</span></a>
-								      	<div class="product-navigation product-show">
-											<div class="container">
-												<div class="menu-left-content">
-													<ul>
-														<li>
-											          		<div class="catrgory-navigation">
-											             		<a href="/avs/newproducts/hood+shields.html" class="category-image">
-											                  		<img alt="Ventvisors / Side Window Deflectors" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXdpbmRvdy5qcGc-200-200.png" width="52px" height="52px"/>
-											                  	</a>
-											                  	<div class="menu-details">
-											                  		<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Ventvisors / Side Window Deflectors</span></a></div>
-											                   	</div>
-											              	</div>
-											        	</li>
-											       		<li>
-											          		<div class="catrgory-navigation">
-											             		<a href="/avs/newproducts/hood+shields.html" class="category-image">
-											                  		<img alt="Hood Protection" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWhvb2Qtc2hpZWxkcy5qcGc-200-200.png" width="52px" height="52px"/>
-											                  	</a>
-											                  	<div class="menu-details">
-											                  		<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Hood Protection</span></a></div>
-											                   	</div>
-											              	</div>
-											        	</li>
-											        	<li>
-											          		<div class="catrgory-navigation">
-											             		<a href="/avs/newproducts/hood+shields.html" class="category-image">
-											                  		<img alt="Exterior Accessories" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWV4dGVyaW9yLWFjY2Vzc29yaWVzLmpwZw-200-200.png" width="52px" height="52px"/>
-											                  	</a>
-											                  	<div class="menu-details">
-											                  		<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Exterior Accessories</span></a></div>
-											                   	</div>
-											              	</div>
-											        	</li>
-											        	<li>
-											          		<div class="catrgory-navigation">
-											             		<a href="/avs/newproducts/hood+shields.html" class="category-image">
-											                  		<img alt="Light Covers" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWxpZ2h0LWNvdmVycy5qcGc-200-200.png" width="52px" height="52px"/>
-											                  	</a>
-											                  	<div class="menu-details">
-											                  		<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Light Covers</span></a></div>
-											                   	</div>
-											              	</div>
-											        	</li>
-											        	<li>
-											          		<div class="catrgory-navigation">
-											             		<a href="/avs/newproducts/hood+shields.html" class="category-image">
-											                  		<img alt="Hood Scoops" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXNjb29wcy12ZW50cy1kZWNhbHMuanBn-200-200.png" width="52px" height="52px"/>
-											                  	</a>
-											                  	<div class="menu-details">
-											                  		<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Hood Scoops</span></a></div>
-											                   	</div>
-											              	</div>
-											        	</li>
-											        	<li>
-											          		<div class="catrgory-navigation">
-											             		<a href="/avs/newproducts/hood+shields.html" class="category-image">
-											                  		<img alt="Interior Accessories" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWludGVyaW9yLWFjY2Vzc29yaWVzLmpwZw-200-200.png" width="52px" height="52px"/>
-											                  	</a>
-											                  	<div class="menu-details">
-											                  		<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Interior Accessories</span></a></div>
-											                   	</div>
-											              	</div>
-											        	</li>
-										        	</ul>
-												</div>   
-											</div>
-											<div class="view-all-links">
-												<a href="">View All Categories</a>
-											</div>
-										</div>
-									</li>
-			                		<li class="level0 nav-1 level-top parent our-products-menu hidefor-mobile">
-							       		<a class="level-top" href="javascript:void(0)">
-							           		<span>Our Products</span>
-							        	</a>
-							    	</li>
-									<li class="level0 nav-1 level-top parent about-links our-brand-topnavi">
-							        	<ul class="level0">
-											<li><a href="/avs/index.html"><span class="lund-avs-line"><img alt="AVS Brand" src="/assets/application/lundinternationalcorp/images/brands-logo-avs.png" /></span></a></li>
-											<li><a href="/lund/index.html"><span class="lund-lund-line"><img alt="Lund Brand" src="/assets/application/lundinternationalcorp/images/brands-logo-lund.png" /></span></a></li>
-										</ul> 
-						          		<a class="level-top" href="javascript:void(0)" title="Our Family"><span>Our Family</span></a>
-							     	</li>
-									<li class="level0 nav-1 level-top about-links parent our-vehicle-menu">
-						            	<a class="level-top" href="/avs/where-to-buy" title="Where To Buy"><span>Where To Buy</span></a>
-								      	<ul class="level0">
-							       			<li class="level1"><a href="/avs/where-to-buy-international.html" title="International Dealers">International Dealers</a></li>
-						                	<li class="level1"><a href="/avs/where-to-buy-us.html" title="United States">United States</a></li>
-						        		</ul>
-									</li>
-									<li class="level0 nav-1 level-top parent about-links">
-						            	<a class="level-top" href="javascript:void(0)" title="My Account"><span>My Account</span></a>
-							           	<ul class="level0">
-							                <li class="level1"><a href="" title="Login or Register">Login or Register</a></li>
-						                </ul>
-									</li>
-								</ul>
+						          		<a class="level-top" href="javascript:void(0)" title="Our Products"><span>Our Products</span></a>
+							           		<div class="product-navigation product-show">
+												<div class="container">
+													<div class="menu-left-content">
+														<ul>
+															<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Bull Bars" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL19NR181NzI1LmpwZw-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Bull Bars</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+										        			<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Ventvisors / Side Window Deflectors" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXdpbmRvdy5qcGc-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Ventvisors / Side Window Deflectors</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+										        			<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Hood Protection" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWhvb2Qtc2hpZWxkcy5qcGc-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Hood Protection</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+										        			<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Fender Flare" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGFnb3J5X2ZlbmRlcl9mbGFyZV9lbGl0ZS5qcGc-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Fender Flare</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+										        			<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Running Boards" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXJ1bm5pbmctYm9hcmRzLmpwZw-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Running Boards</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+										        			<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Nerf Bars" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL1VOLU1haW4uanBn-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Nerf Bars</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+												        	<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Floor Liners" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWZsb29yLWNvdmVyaW5ncy5qcGc-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Floor Liners</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+												        	<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Storage Boxes" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXN0b3JhZ2UtYm94ZXMuanBn-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Storage Boxes</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+												        	<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Liquid Storage Tanks" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGFnb3J5LXN0b3JhZ2UtdGFua3MuanBn-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Liquid Storage Tanks</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+												        	<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Tonneau Covers" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXRvbm5lYXVzLmpwZw-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Tonneau Covers</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+												        	<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Cargo Management" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWNhcmdvLW1hbmFnZW1lbnQuanBn-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Cargo Management</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+												        	<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Bed Accessories" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWJlZC1hY2Nlc3Nvcmllcy5qcGc-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Bed Accessories</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+												        	<li>
+												          		<div class="catrgory-navigation">
+												             		<a href="/lund/newproducts/tonneaus.html" class="category-image">
+												                  		<img alt="Grille Coverings" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWdyaWxsZS1jb3ZlcmluZ3MuanBn-200-200.png" width="70px" height="70px"/>
+												                  	</a>
+												                  	<div class="menu-details">
+												                  		<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Grille Coverings</span></a></div>
+												                   	</div>
+												              	</div>
+												        	</li>
+										        											        	 
+															</ul>
+														</div>   
+													</div>
+													<div class="view-all-links">
+														<a href="">View All Categories</a>
+													</div>
+												</div>
+											</li>
+			                				<li class="level0 nav-1 level-top parent our-products-menu hidefor-mobile">
+							                    <a class="level-top" href="javascript:void(0)">
+							                        <span>Our Products</span>
+							                    </a>
+											</li>
+											<li class="level0 nav-1 level-top parent about-links our-brand-topnavi">
+							            	 	<ul class="level0">
+													<li><a href="/avs/index.html"><span class="lund-avs-line"><img alt="AVS Brand" src="/assets/application/lundinternationalcorp/images/brands-logo-avs.png" /></span></a></li>
+													<li><a href="/lund/index.html"><span class="lund-lund-line"><img alt="Lund Brand" src="/assets/application/lundinternationalcorp/images/brands-logo-lund.png" /></span></a></li>
+												</ul> 
+						            	   		<a class="level-top" href="javascript:void(0)" title="Our Family"><span>Our Family</span></a>
+							            	</li>
+											<li class="level0 nav-1 level-top parent about-links our-vehicle-menu">
+						            	 		<a class="level-top" href="javascript:void(0)" title="Where To Buy"><span>Where To Buy</span></a>
+							                  	<ul class="level0">
+							                		<li class="level1"><a href="/lund/where-to-buy-international.html" title="International Dealers">International Dealers</a></li>
+						                         	<li class="level1"><a href="/lund/where-to-buy-us.html" title="United States">United States</a></li>
+						                  		</ul>
+											</li>
+											<li class="level0 nav-1 level-top parent about-links">
+						            			<a class="level-top" href="javascript:void(0)" title="My Account"><span>My Account</span></a>
+							                  	<ul class="level0">
+							                		<li class="level1"><a href="" title="Login or Register">Login or Register</a></li>
+						                        </ul>
+											</li>
+										</ul>
 							   	<ul class="custom-login">
 							    	<li>
 	                	              	<a href="">Login or Register</a>
@@ -552,7 +625,7 @@
 							  	</ul>
 							</div>
 						</nav> 
-						<form id="search_mini_form" action="/avs/newproducts" method="get">
+						<form id="search_mini_form" action="" method="get">
     						<div class="form-search">
 						        <div class="input-group">
 						            <input id="search" type="text" name="search" value="" class="input-text form-control" maxlength="128">
@@ -578,63 +651,133 @@
 			    <div class="container">
 			        <div class="menu-left-content">
 			            <ul>
-			       			<li>
+			           		<li>
 								<div class="catrgory-navigation">
-									<a href="/avs/newproducts/hood+shields.html" class="category-image">
-										<img alt="Ventvisors / Side Window Deflectors" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXdpbmRvdy5qcGc-200-200.png" width="52px" height="52px"/>
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Bull Bars" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL19NR181NzI1LmpwZw-200-200.png" width="70px" height="70px"/>
 									</a>
 									<div class="menu-details">
-										<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Ventvisors / Side Window Deflectors</span></a></div>
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Bull Bars</span></a></div>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="catrgory-navigation">
-									<a href="/avs/newproducts/hood+shields.html" class="category-image">
-										<img alt="Hood Protection" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWhvb2Qtc2hpZWxkcy5qcGc-200-200.png" width="52px" height="52px"/>
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Ventvisors / Side Window Deflectors" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXdpbmRvdy5qcGc-200-200.png" width="70px" height="70px"/>
 									</a>
 									<div class="menu-details">
-										<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Hood Protection</span></a></div>
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Ventvisors / Side Window Deflectors</span></a></div>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="catrgory-navigation">
-									<a href="/avs/newproducts/hood+shields.html" class="category-image">
-										<img alt="Exterior Accessories" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWV4dGVyaW9yLWFjY2Vzc29yaWVzLmpwZw-200-200.png" width="52px" height="52px"/>
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Hood Protection" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWhvb2Qtc2hpZWxkcy5qcGc-200-200.png" width="70px" height="70px"/>
 									</a>
 									<div class="menu-details">
-										<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Exterior Accessories</span></a></div>
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Hood Protection</span></a></div>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="catrgory-navigation">
-									<a href="/avs/newproducts/hood+shields.html" class="category-image">
-										<img alt="Light Covers" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWxpZ2h0LWNvdmVycy5qcGc-200-200.png" width="52px" height="52px"/>
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Fender Flare" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGFnb3J5X2ZlbmRlcl9mbGFyZV9lbGl0ZS5qcGc-200-200.png" width="70px" height="70px"/>
 									</a>
 									<div class="menu-details">
-										<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Light Covers</span></a></div>
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Fender Flare</span></a></div>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="catrgory-navigation">
-									<a href="/avs/newproducts/hood+shields.html" class="category-image">
-										<img alt="Hood Scoops" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXNjb29wcy12ZW50cy1kZWNhbHMuanBn-200-200.png" width="52px" height="52px"/>
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Running Boards" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXJ1bm5pbmctYm9hcmRzLmpwZw-200-200.png" width="70px" height="70px"/>
 									</a>
 									<div class="menu-details">
-										<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Hood Scoops</span></a></div>
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Running Boards</span></a></div>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class="catrgory-navigation">
-									<a href="/avs/newproducts/hood+shields.html" class="category-image">
-										<img alt="Interior Accessories" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWludGVyaW9yLWFjY2Vzc29yaWVzLmpwZw-200-200.png" width="52px" height="52px"/>
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Nerf Bars" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL1VOLU1haW4uanBn-200-200.png" width="70px" height="70px"/>
 									</a>
 									<div class="menu-details">
-										<div class="menu-title"><a href="/avs/newproducts/hood+shields.html" data-category="35072" data-brands="" data-brand="avs"><span>Interior Accessories</span></a></div>
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Nerf Bars</span></a></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="catrgory-navigation">
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Floor Liners" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWZsb29yLWNvdmVyaW5ncy5qcGc-200-200.png" width="70px" height="70px"/>
+									</a>
+									<div class="menu-details">
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Floor Liners</span></a></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="catrgory-navigation">
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Storage Boxes" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXN0b3JhZ2UtYm94ZXMuanBn-200-200.png" width="70px" height="70px"/>
+									</a>
+									<div class="menu-details">
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Storage Boxes</span></a></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="catrgory-navigation">
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Liquid Storage Tanks" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGFnb3J5LXN0b3JhZ2UtdGFua3MuanBn-200-200.png" width="70px" height="70px"/>
+									</a>
+									<div class="menu-details">
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Liquid Storage Tanks</span></a></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="catrgory-navigation">
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Tonneau Covers" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LXRvbm5lYXVzLmpwZw-200-200.png" width="70px" height="70px"/>
+									</a>
+									<div class="menu-details">
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Tonneau Covers</span></a></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="catrgory-navigation">
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Cargo Management" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWNhcmdvLW1hbmFnZW1lbnQuanBn-200-200.png" width="70px" height="70px"/>
+									</a>
+									<div class="menu-details">
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Cargo Management</span></a></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="catrgory-navigation">
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Bed Accessories" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWJlZC1hY2Nlc3Nvcmllcy5qcGc-200-200.png" width="70px" height="70px"/>
+									</a>
+									<div class="menu-details">
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Bed Accessories</span></a></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="catrgory-navigation">
+									<a href="/lund/newproducts/tonneaus.html" class="category-image">
+										<img alt="Grille Coverings" src="/thumbnails/l1_cHJvZHVjdHMvcHJvZHVjdF9jYXRlZ29yaWVzL2NhdGVnb3J5LWdyaWxsZS1jb3ZlcmluZ3MuanBn-200-200.png" width="70px" height="70px"/>
+									</a>
+									<div class="menu-details">
+										<div class="menu-title"><a href="/lund/newproducts/tonneaus.html" data-category="35072" data-brands="" data-brand="lund"><span>Grille Coverings</span></a></div>
 									</div>
 								</div>
 							</li>
@@ -645,7 +788,9 @@
 			        <a href="">View All Categories</a>
 			    </div>
 			</div>
-		</div>	 
+		</div>    
+
+            
 <div class="container">
 
     <div class="layout layout-1-cols">
@@ -885,8 +1030,7 @@ jQuery(document).ready(function() {
 });
 </script>
 
-
-        <footer role="contentinfo clearfix">
+    	<footer role="contentinfo clearfix">
     	<div class="top-footer clearfix">
         	<div class="container"> 
        			<div class="footer-top-left">
@@ -918,44 +1062,43 @@ Enter your email address below.</label>
 		       		<div class="first">  
 		            	<h3 class="heading">About Us</h3>
 		            	<ul>
-							<li><a href="/avs/about-us.html"  title="Our Story">Our Story</a></li>
-						  	<li><a href="/avs/about-us/corporate-leadership.html"  title="Leadership">Leadership</a></li>
-						  	<li><a href="/avs/about-us/news.html"  title="Press + News">Press + News</a></li>
-						 	<li><a href="/avs/about-us/manufacturing.html"  title="Manufacturing">Manufacturing</a></li>
-						  	<li><a href="/avs/about-us/community-outreach.html"  title="Community Outreach">Community Outreach</a></li>
-						 	<li><a href="/avs/about-us/patents.html"  title="Patents">Patents</a></li>
-							<li><a href="/avs/about-us/sponsorships.html"  title="Sponsorships">Sponsorships</a></li>
-						  	<li><a href="/avs/about-us/social-gallery.html"  title="Social Gallery">Social Gallery</a></li>
-							<li><a href="/avs/about-us/special-offers.html"  title="Special Offers">Special Offers</a></li>
+							<li><a href="/lund/about-us.html"  title="Our Story">Our Story</a></li>
+						  	<li><a href="/lund/about-us/corporate-leadership.html"  title="Leadership">Leadership</a></li>
+						  	<li><a href="/lund/about-us/news.html"  title="Press + News">Press + News</a></li>
+						  	<li><a href="/lund/about-us/manufacturing.html"  title="Manufacturing">Manufacturing</a></li>
+						 	<li><a href="/lund/about-us/community-outreach.html"  title="Community Outreach">Community Outreach</a></li>
+							<li><a href="/lund/about-us/patents.html"  title="Patents">Patents</a></li>
+							<li><a href="/lund/about-us/sponsorships.html"  title="Sponsorships">Sponsorships</a></li>
+						  	<li><a href="/lund/about-us/social-gallery.html"  title="Social Gallery">Social Gallery</a></li>
+							<li><a href="/lund/about-us/special-offers.html"  title="Special Offers">Special Offers</a></li>
 						</ul>
 					</div>
 					<div class="second">  
 		            	<h3 class="heading">About You</h3>
 		            	<ul>
 						</ul>
-					</div>
+					</div>	
 					<div class="thried">  
 		            	<h3 class="heading">Customer Care</h3>
-		           		<ul>
-							<li><a href="/avs/customer-care.html"  title="Customer Care">Customer Care</a></li>
-						   	<li><a href="/avs/customer-care/product-registration.html"  title="Product Registration">Product Registration</a></li>
-						  	<li><a href="/avs/customer-care/careers.html"  title="Careers">Careers</a></li>
-						   	<li><a href="/avs/customer-care/faq.html"  title="FAQ">FAQ</a></li>
-						  	<li><a href="/avs/customer-care/warranty-information.html"  title="Warranty Information">Warranty Information</a></li>
-						   	<li><a href="/avs/customer-care/installation-guides.html"  title="Installation Guides">Installation Guides</a></li>
-						   	<li><a href="/avs/customer-care/catalog.html"  title="Catalog">Catalog</a></li>
-						 	<li><a href="http://www.interactivegarage.com/lund"  target="_blank" title="Interactive Garage">Interactive Garage</a></li>
-						</ul>
+		            	<ul>
+							<li><a href="/lund/customer-care.html"  title="Customer Care">Customer Care</a></li>
+						  	<li><a href="/lund/customer-care/product-registration.html"  title="Product Registration">Product Registration</a></li>
+						  	<li><a href="/lund/customer-care/careers.html"  title="Careers">Careers</a></li>
+						   	<li><a href="/lund/customer-care/faq.html"  title="FAQ">FAQ</a></li>
+						 	<li><a href="/lund/customer-care/warranty-information.html"  title="Warranty Information">Warranty Information</a></li>
+						   	<li><a href="/lund/customer-care/installation-guides.html"  title="Installation Guides">Installation Guides</a></li>
+							<li><a href="/lund/customer-care/catalog.html"  title="Catalog">Catalog</a></li>
+							<li><a href="http://www.interactivegarage.com/lund"  target="_blank" title="Interactive Garage">Interactive Garage</a></li>
+						</ul>	  
 					</div>
 					<div class="fourth">
 						<h3 class="heading">Connect</h3>
 						<ul>
 							<li class="social-link">
-								<a class="fa fa-facebook" href="https://www.facebook.com/autoventshade" target="_blank"><span>&nbsp;</span></a> 
-								<a class="fa fa-twitter" href="https://twitter.com/autoventshade" target="_blank"><span>&nbsp;</span></a> 
-								<a class="fa fa-instagram" href="https://www.instagram.com/autoventshade" target="_blank"><span>&nbsp;</span></a>
-								<br />
-								<br />
+								<a class="fa fa-facebook" href="https://www.facebook.com/LUNDaccessories" target="_blank"><span>&nbsp;</span></a> 
+								<a class="fa fa-twitter" href="https://twitter.com/lundaccessories" target="_blank"><span>&nbsp;</span></a> 
+								<a class="fa fa-instagram" href="https://www.instagram.com/lund.accessories" target="_blank"><span>&nbsp;</span></a>						
+								</br></br>
 								<a class="fa fa-google-plus" href="" target="_blank"><span>&nbsp;</span></a>
 								<a class="fa fa-pinterest" href="" target="_blank"><span>&nbsp;</span></a>	
 								<a class="fa fa-linkedin" href="" target="_blank"><span>&nbsp;</span></a>								

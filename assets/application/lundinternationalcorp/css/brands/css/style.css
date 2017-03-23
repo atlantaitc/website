@@ -1792,7 +1792,7 @@ input[type=search] {
 	box-sizing:border-box
 }
 input[type=checkbox], input[type=radio] {
-	margin:4px 0 0;
+	margin:4px 20px 0;
 	line-height:normal
 }
 input[type=file] {
@@ -9143,6 +9143,52 @@ ol, ul {
 
 /*end product-browser page*/
 
+/*=== STYLE FOR DEALER LOCATOR POPUP ===*/
+#tabs ul{
+	display:inline-table;
+	margin:0;
+}
+#tabs ul li{
+	float:left;
+}
+#tabs ul li a{
+	font-size: 18px;
+    color: #4e4e4e;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 15px 15px 15px 0px;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    transition:all 0.5s ease;}
+#tabs ul li a:hover,
+#tabs ul li.ui-tabs-active a{
+    background: #75b9e1;
+    color:#fff;
+    border:1px solid #75b9e1;
+}
+.three-img{
+    width:46%;
+    float: left;
+    border:1px solid #ddd;
+    margin:10px 10px 10px 0px;}
+.three-img img{
+    width: 100%;
+}
+.hide-show{
+    display: none;
+}
+#locator .type{
+    border:0 !important;
+}
 
 /*=== STYLE FOR DETAILS PAGE ACCODING ===*/
 #locator.accordion-new .results a.title{
@@ -9233,3 +9279,12 @@ ol, ul {
         width: 300px !important;
     }
 }
+
+
+
+.options{ padding-top:20px;}
+.zips{ float: left; width: 40%; }
+.radius{ float: left; width: 37%; }
+.submitMapOptions{ float: left; width: 100%; }
+.submitMapButton{ float: left; }
+.submitMapButton button{ width: 150px }

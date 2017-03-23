@@ -1716,7 +1716,7 @@ input[type=search] {
     box-sizing:border-box
 }
 input[type=checkbox], input[type=radio] {
-    margin:4px 0 0;
+    margin:4px 20px 0;
     line-height:normal
 }
 input[type=file] {
@@ -9254,11 +9254,7 @@ ol, ul {
     }
 }
 
-@media (max-width:560px){   
-    .three-img {
-        width: 100%;
-    }
-}
+
 
 .options{ padding-top:20px;}
 .zips{ float: left; width: 40%; }

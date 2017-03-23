@@ -33,6 +33,9 @@
 #pages .post p{font-size: 13px; color: #303133; margin-left: auto !important;}
 #pages .post a{color: #4f5d73;}
 
+#pages .layout-2-cols  h2 {font-size: 63px; color: #202020; text-align: center; font-weight: normal; margin: 20px 0px 40px; }
+
+
 #pages div[role="main"]  {border-left: 1px solid #d9d9d9; box-shadow: inset 8px 0px 2px 0px rgba(0,0,0,0.10); margin-bottom: 0px; padding-left: 50px; }
 #pages h2.title {font-size: 24px; color: #fff; background: #0079c2; text-align: center; padding: 15px 0px; text-transform: uppercase;}
 #pages h3.title {font-size: 24px; color: #fff; background: #0079c2; text-align: center; padding: 15px 0px; text-transform: uppercase;}

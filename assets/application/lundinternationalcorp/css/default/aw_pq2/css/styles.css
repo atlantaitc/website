@@ -198,6 +198,9 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     resize: vertical;
+    margin-left: 50px;
+	max-width: 90% !important;
+	height: 150px !important;
 }
 
 .aw-pq2-form__label {
@@ -219,6 +222,7 @@
 
 .aw-pq2-form__button-set {
     padding-top: 5px;
+    margin-left: 50px;
 }
 
 .aw-pq2-list__add-answer-button-wrapper {
