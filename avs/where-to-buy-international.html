@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title></title>
+		<title>Lund International | AVS | LUND</title>
 		<meta name="keywords" content="" />
         <meta name="description" content="" />
         <meta name="robots" content="INDEX,FOLLOW" />
@@ -34,8 +34,8 @@
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/aw_pq2/css/custom.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/aw_vidtest/css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/default/jquery.rateyo.css" media="all" />  
-		
 		<link rel="stylesheet" type="text/css" href="/assets/application/lundinternationalcorp/css/brands/css/avs.css" media="all" />		
+
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>      
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.colorbox.js"></script>
@@ -81,8 +81,9 @@
         </script>
 		
 		<script src="/assets/application/lundinternationalcorp/js/default/jquery-1.12.4.js"></script>
-				
-		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/prototype/prototype.js"></script>
+		<script src="/assets/application/lundinternationalcorp/js/default/jquery-ui.js"></script>
+		
+		
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/prototype/validation.js"></script>			
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/scriptaculous/builder.js"></script>
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/scriptaculous/effects.js"></script>
@@ -98,17 +99,15 @@
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.colorbox.js"></script>
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/ulvehicle.js"></script>		 
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/brands/custom.js"></script>
-		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/brands/owl.carousel.js"></script>		
-		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.rateyo.js"></script>
+		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/brands/owl.carousel.js"></script>	
+		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/jquery.rateyo.js"></script>	
 		
 		<!-- 
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/custom.js"></script>
 		<script type="text/javascript" src="/assets/application/lundinternationalcorp/js/default/owl.carousel.js"></script>
-		-->
-		
-						
+		-->				
 				
-        <link rel="canonical" href="http://www.lundinternational.com/avs/where-to-buy" />        
+        <link rel="canonical" href="http://www.lundinternational.com/where-to-buy" />        
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" />
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,300,100,700,900" />
 		<script type="text/javascript">
@@ -128,7 +127,7 @@
   			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		
-	</head><body id="locator">		<div class="header-bg-section clearfix">
+</head><body id="locator">		<div class="header-bg-section clearfix">
     		<div class="container">
     			<div class="tablet-menu">
         			<a href="javascript:void(0)" onclick="jQuery('.navbar.navbar-default').toggle();">Menu</a>
@@ -165,7 +164,7 @@
 
 								<script type="text/javascript">
 								
-							    jQuery(document).ready(function () {
+								jQuery(document).ready(function () {
 									
 							        jQuery('#installation-year').on('change', function () {
 
@@ -173,7 +172,7 @@
 							
 							            jQuery('#installation-make').attr('disabled', "");
 							            jQuery('#installation-model').attr('disabled', "");
-								        var data = {module : 'getMake', brand : '1', category : '', vehYear : yearForMake}
+								        var data = {module : 'getMake', brand : '3', category : '', vehYear : yearForMake}
 
 								        jQuery.ajax({
 									        url: "/products/ajax-stampede",
@@ -202,7 +201,7 @@
 
 							            jQuery('#installation-model').attr('disabled', "");
 							            
-							            var data = {module : 'getModelSubmodel', brand : '1', vehYear : yearForModel, category : '', vehMake : makeForModel}
+							            var data = {module : 'getModelSubmodel', brand : '3', vehYear : yearForModel, category : '', vehMake : makeForModel}
 
 							            jQuery.ajax({
 									        url: "/products/ajax-stampede",
@@ -230,7 +229,7 @@
 							            var make  = jQuery('#installation-make').val();
 							            var model = jQuery('#installation-model').val();
 
-							            var data = {brand : '1', vehYear : year, vehMake : make, vehModel : model}
+							            var data = {brand : '3', vehYear : year, vehMake : make, vehModel : model}
 							            
 							            jQuery.ajax({
 									        url: "/products/installations",
@@ -250,7 +249,7 @@
 							        jQuery('#go-search').on('click', function () {
 							            var part  = jQuery('#part').val();
 
-							            var data = {brand : '1', part : part}
+							            var data = {brand : '3', part : part}
 							            
 							            jQuery.ajax({
 									        url: "/products/installations-part",
@@ -266,6 +265,9 @@
 									    	}
 									    }); 
 							        });
+
+
+								    
 	
 							        jQuery('.vehicle-year-select').on('change', function () {
 								     
@@ -646,11 +648,13 @@
 			    </div>
 			</div>
 		</div>	 
+
+            
 <div class="container">
 
     <div class="layout layout-1-cols">
 
-        <div class="breadcrumb"><a href="/lund/index.html">Home</a> |  <span class='last'>Dealer Locator</span></div>
+        <div class="breadcrumb"><a href="/avs/index.html">Home</a> |  <span class='last'>Dealer Locator</span></div>
 
         <h1>Dealer Locator</h1>
 
@@ -884,7 +888,6 @@ jQuery(document).ready(function() {
 	});
 });
 </script>
-
 
         <footer role="contentinfo clearfix">
     	<div class="top-footer clearfix">
