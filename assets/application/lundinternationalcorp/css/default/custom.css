@@ -1,4 +1,5 @@
 body{ font-family: 'Roboto', sans-serif;}
+.downArrow{    margin-top: -70px; margin-left: 50%; color: #dde7f8;}
 .top-section { height:45px; background: #424952;}
 .top-section .where-to-buy{ float:right; height:45px;}
 .top-section .where-to-buy a{ display:block; line-height:45px; font-size:13px; color:#ffffff; font-weight:700; background: url(../../images/wehere-buy-icon.png) 15px center no-repeat #61676e; padding:0 15px 0 36px; }
@@ -54,7 +55,7 @@ body{ font-family: 'Roboto', sans-serif;}
 .top-footer .footer-top-left{ float:left; width:50%;}
 .top-footer .footer-top-left .footer-img{ padding-bottom:35px;}
 .top-footer .footer-top-left .text{ font-size:14px; color:#ffffff; line-height:20px;}
-.top-footer .footer-top-right{ float:left; width:50%; padding:0 0 0 198px;}
+.top-footer .footer-top-right{ float:left; width:50%; padding:20px 0 0 198px;}
 .top-footer .footer-top-right h2{ margin:0; padding:0; font-size:18px; color:#fff; font-weight:normal; line-height:18px;}
 .top-footer .footer-top-right h3{ margin:0; padding:0; font-size:18px; color:#fff; font-weight:normal; line-height:18px;}
 .top-footer .footer-top-right label{margin:0; padding:25px 0 10px 0; font-size:14px; color:#fff; line-height:20px; font-weight:normal;}

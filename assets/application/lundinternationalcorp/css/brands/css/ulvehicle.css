@@ -51,7 +51,7 @@
 
 
 
-.main-vehicle-section{margin:0; padding:18px 0 0 0; background:url(../images/form-bg.png) center top no-repeat; height:95px; width:100%; margin-top:1px;}
+.main-vehicle-section{margin: -10px 0 0; padding:18px 0 0 0; background:url(../images/form-bg.png) center top no-repeat; height:95px; width:100%; }
 .vehicle-top{margin:0 auto; padding:0; width:100%;}
 .vehicle-small{margin:0; padding:0; width:19%; float:left;}
 .vehicle-year{margin:0 3px 0 0; padding:0; width:20%; float:left;}
